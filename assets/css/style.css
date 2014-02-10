@@ -1,0 +1,156 @@
+body {
+	background: url('../img/bg.jpg');
+	color:#fff;
+}
+
+.jumbotron, footer {
+	background:#333;
+	background: rgba(255,255,255, 0.1);
+}
+
+footer .container {
+	padding:1em 0;
+}
+
+/*
+ * Sticky Footer
+ */
+html, body { height: 100%; }
+div#wrapper {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -80px;
+}
+div#wrapper > .container {
+	padding-bottom:80px;
+}
+footer { height: 80px; }
+
+
+/*
+ * Projects
+ */
+
+/* project list */
+section section {
+	padding-left:1em;
+}
+
+h3 + p {
+	margin-top:-10px;
+}
+
+ul.social-buttons {
+	list-style-type:none;
+}
+
+ul.social-buttons li {
+	display:inline-block;
+}
+
+/* project item */
+.project {
+	background: rgba(0,0,0,.2);
+	border-bottom:1px solid #555;
+	padding:.2em .5em 1em 1em;
+	margin:0 0 1em 1em;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.project-maintained {
+	border-left:3px solid #01FF70;
+}
+.project-unmaintained {
+	border-left:3px solid #FF4136;
+}
+
+.project-soon {
+	border-left:3px solid #0074D9;
+	position:relative;
+}
+
+.project-soon .soon {
+	position:absolute;
+	padding:4px 14px 4px 10px;
+	background:#444;
+	top:-10px;
+	right:-10px;
+	
+	white-space:nowrap;
+	border-top-right-radius:10px;
+}
+
+.project-soon .soon:before {
+	content:"";
+	
+	position:absolute;
+	bottom:-10px;
+	right:0;
+	width:10px;
+	height:10px;
+	
+	background:#444;
+}
+
+.project-soon .soon:after {
+	content:"";
+	position:absolute;
+	bottom:-20px;
+	right:0px;
+	width:10px;
+	height:20px;
+
+	background:#111;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+
+/*
+ * Project icons
+ */
+.icons i {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background-repeat:no-repeat;
+	background-size:16px 16px;
+	
+	margin:1px 0 0 .5em;
+}
+
+.icons i.laravel { background-image: url(../img/laravel.png);}
+.icons i.jquery { background-image: url(../img/jquery.png);}
+.icons i.slim { background-image: url(../img/slim.png);}
+.icons i.php { background-image: url(../img/php.png);}
+.icons i.python { background-image: url(../img/python.png);}
+.icons i.js { background-image: url(../img/js.png);}
+
+
+/*
+ * Social buttons
+ */
+.social {
+	float:right;
+}
+.social .buttons a {
+	display:inline-block;
+	background-image: url(../img/flat-social-media-icons-enfuzed.png);
+	background-size: 357px 641px;
+	width:48px;
+	height:48px;
+	text-decoration:none;
+}
+
+.social .buttons a.twitter 		 { background-position:-61px -323px; }
+.social .buttons a.twitter:hover { background-position:-61px -1px;   }
+.social .buttons a.gplus 		 { background-position:-181px -323px;}
+.social .buttons a.gplus:hover 	 { background-position:-181px -1px;  }
+.social .buttons a.linkedin 	 { background-position:-301px -323px;}
+.social .buttons a.linkedin:hover{ background-position:-301px -1px;  }
+.social .buttons a.github 		 { background-position:-241px -443px;}
+.social .buttons a.github:hover  { background-position:-241px -121px;}

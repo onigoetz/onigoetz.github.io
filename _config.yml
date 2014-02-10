@@ -1,0 +1,22 @@
+# Dependencies
+markdown:         rdiscount
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Server
+destination:      ./_gh_pages
+host:             0.0.0.0
+port:             9001
+baseurl:          /
+url:              http://localhost:9001
+encoding:         UTF-8
+
+# Custom vars
+
+social:
+  github:	https://github.com/onigoetz
+  gplus: https://plus.google.com/u/1/112011413401921026329/posts
+  linkedin: http://ch.linkedin.com/in/stephanegoetz
+  twitter: http://twitter.com/onigoetz
