@@ -9,8 +9,13 @@
 		{% include nav.html %}
 		
 		<div class="container" class=content>
-			<h2>{{ page.title }}</h2>
-			{{ content }}
+			<div class=row>
+				<article class="post col-sm-8 col-sm-push-2">
+					<h2>{{ page.title }}</h2>
+					{{ content }}
+				</article>
+			</div>
+
 		</div>
     </div>
 
