@@ -7,14 +7,6 @@ tags:
 - Phpbb3-connector
 - Plugin
 - Wordpress
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  wpzoom_post_title: 'Yes'
-  wpzoom_post_readmore: 'Yes'
-  wpzoom_post_url: ''
 ---
 Long time ago, I tested a plugin which made possible the connection between PHPBB and Wordpress.
 
@@ -38,12 +30,8 @@ Or you can search for "phpbb single sign on" in the admin area of your Wordpress
 
 Don't forget to run the installer and to set the path to phpbb.
 
-The phpbb folder has to be within the wordpress folder, preferably in "forum/".
+The phpbb folder has to be within the wordpress folder, preferably in `forum/`.
 
 You need to add the slash at the end of the path.
 
 For support, you can send me a mail with the contact form or just post a comment.
-
-A support forum will be created soon (with this new plugin ;-))
-
-P.S. the contact form had some problems lately. they're corrected now, I ask to the person who sent me a message to send it again. or I won't be able to answer them.

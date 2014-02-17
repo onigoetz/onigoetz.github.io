@@ -8,14 +8,6 @@ tags:
 - Picture Gallery
 - Tutorial
 - Wordpress
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  wpzoom_post_title: 'Yes'
-  wpzoom_post_readmore: 'Yes'
-  wpzoom_post_url: ''
 ---
 Anyone who's tried to create a gallery on wordpress knows it ; it's not easy.
 

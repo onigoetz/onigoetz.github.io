@@ -3,22 +3,12 @@ layout: post
 title: Deployer on Github
 categories: []
 tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '2'
-  wpzoom_post_title: 'Yes'
-  wpzoom_post_readmore: 'Yes'
-  wpzoom_post_url: ''
 ---
 Hi !
 
 It's been a really long time, (more than two years actually &gt;_&lt;)
 
 I've been working very hard on my latest project : <a href="http://youmewine.ch">Youmewine</a> if you live in Switzerland and like wine, you might be interested in what we do :D
-
-&nbsp;
 
 So, back to my post.
 
