@@ -1,7 +1,45 @@
 body {
 	background: url('../img/bg.jpg');
 	color:#fff;
+	
+    font-size: 14px;
+    line-height: 22px;
 }
+
+h1 {
+  font-size: 5.0625rem;
+  line-height: 6.2500rem;
+  margin-top: 3.125rem;
+  margin-bottom: 1.563rem;
+}
+h2 {
+  font-size: 2.2500rem;
+  line-height: 3.1250rem;
+  margin-top: 3.125rem;
+  margin-bottom: 1.563rem;
+}
+h3 {
+  font-size: 1.5000rem;
+  line-height: 1.5625rem;
+  margin-top: 1.563rem;
+  margin-bottom: 1.563rem;
+}
+h4 {
+  font-size: 1.5000rem;
+  line-height: 1.5625rem;
+  margin-top: 1.563rem;
+  margin-bottom: 1.563rem;
+}
+p, ul, ol {
+  margin-top: 1.563rem;
+  margin-bottom: 1.563rem;
+}
+
+/* Sanitation */
+hr { border: 1px solid; margin: -1px 0; }
+ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+b, strong, em, small { line-height: 1; }
+
 
 header, footer, article.post {
 	background:#444;
@@ -9,16 +47,16 @@ header, footer, article.post {
 }
 
 header {
-	margin-bottom:2em;
+	margin-bottom:2rem;
 }
 
 header p {
-	font-size:1.6em;
-	line-height:1.4em;
+	font-size:1.6rem;
+	line-height:1.4rem;
 }
 
 h1 + p {
-	margin-top:-20px;
+	margin-top:-1.563rem;
 }
 
 footer .container {
@@ -71,16 +109,16 @@ ul.social-buttons li {
 .project {
 	background: rgba(0,0,0,.2);
 	border-bottom:1px solid #555;
-	padding:.2em .5em 1em 1em;
-	margin:0 0 1em 1em;
+	padding:.2rem .5rem 1rem 1rem;
+	margin:0 0 2rem 2rem;
 	
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	border-radius: 1rem;
 }
 
 .project h4 {
-	margin-top:.5em;
+	margin-top:.5rem;
 	margin-bottom:0;
 }
 
@@ -99,7 +137,7 @@ ul.social-buttons li {
 
 .project-soon .soon {
 	position:absolute;
-	padding:4px 14px 4px 10px;
+	padding:.5rem 2rem .5rem .8rem;
 	background:#444;
 	top:-10px;
 	right:-10px;
@@ -133,6 +171,10 @@ ul.social-buttons li {
 	border-bottom-right-radius:10px;
 }
 
+.github-btn + .github-btn {
+	margin-left:10px;
+}
+
 
 /*
  * Project icons
@@ -158,11 +200,9 @@ ul.social-buttons li {
  * Blog post
  */
 .post {
-	padding:1em;
-	
-	border-radius:10px;
-	
-	margin-bottom:2em;
+	padding:1rem;
+	border-radius:1rem;
+	margin-bottom:2rem;
 }
 
 .post > h2 {
@@ -257,53 +297,3 @@ ul.social-buttons li {
 .highlight .vg { color: #008080 } /* Name.Variable.Global */
 .highlight .vi { color: #008080 } /* Name.Variable.Instance */
 .highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
-
-
-/*
- * Rythm grid
- */
-
-body {
-  font-size: 14px;
-  line-height: 22px;
-}
-h1 {
-  font-size: 71px;
-  line-height: 88px;
-  margin-top: 44px;
-  margin-bottom: 22px;
-}
-h2 {
-  font-size: 32px;
-  line-height: 44px;
-  margin-top: 44px;
-  margin-bottom: 22px;
-}
-h3 {
-  font-size: 21px;
-  line-height: 22px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-h4 {
-  font-size: 21px;
-  line-height: 22px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-p, ul, ol {
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-
-/* Sanitation */
-hr {
-  border: 1px solid;
-  margin: -1px 0;
-}
-ul ul, ol ol, ul ol, ol ul {
-  margin-bottom: 0;
-}
-b, strong, em, small {
-  line-height: 1;
-}
