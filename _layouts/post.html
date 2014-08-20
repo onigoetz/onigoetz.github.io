@@ -8,14 +8,11 @@
     <div id="wrapper">
 		{% include nav.html %}
 		
-		<div class="container" class=content>
-			<div class=row>
-				<article class="post col-sm-8 col-sm-push-2">
-					<h2>{{ page.title }}</h2>
-					{{ content }}
-				</article>
-			</div>
-
+		<div class="container content">
+			<article class=post>
+				<h2>{{ page.title }}</h2>
+				{{ content }}
+			</article>
 		</div>
     </div>
 
