@@ -151,11 +151,12 @@ ul.social-buttons li {
 	position:relative;
 }
 
-span.project-maintained, span.project-unmaintained, span.project-soon {
+span.project {
 	display:inline-block;
-	padding:0 5px;
-	border-left-width:12px;
+	padding:5px 10px;
+	border-left-width:8px;
 	height:20px;
+	line-height:22px;
 	vertical-align:middle;
 }
 
@@ -197,7 +198,8 @@ span.project-maintained, span.project-unmaintained, span.project-soon {
 	border-bottom-right-radius:10px;
 }
 
-.badges > span, .badges > a {
+.badges > span,
+.badges > a {
 	margin-right:10px;
 }
 
