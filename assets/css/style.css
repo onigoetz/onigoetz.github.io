@@ -7,7 +7,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 body {
 	background: url('../img/bg.gif') fixed;
 	color:#333;
-	
+
     font-size: 14px;
     line-height: 22px;
 }
@@ -116,7 +116,7 @@ ul.social-buttons li {
 	background: rgba(255,255,255,.7);
 	padding:.2rem .5rem .2rem 1rem;
 	margin:1.5em 0 0 0;
-	
+
 	-webkit-border-radius: 1rem;
 	-moz-border-radius: 1rem;
 	border-radius: 1rem;
@@ -138,17 +138,21 @@ ul.social-buttons li {
 	margin-top:.5rem;
 }
 
-.project-maintained {
-	border-left:5px solid #2ECC40;
+.project-active {
+	border-left:5px solid #5cb85c;
+}
+
+.project-wip {
+	border-left:5px solid #5bc0de;
+	position:relative;
 }
 
 .project-unmaintained {
-	border-left:5px solid #FF4136;
+	border-left:5px solid #f0ad4e;
 }
 
-.project-soon {
-	border-left:5px solid #7FDBFF;
-	position:relative;
+.project-abandoned {
+	border-left:5px solid #d9534f;
 }
 
 span.project {
@@ -158,44 +162,6 @@ span.project {
 	height:20px;
 	line-height:22px;
 	vertical-align:middle;
-}
-
-.project-soon .soon {
-	position:absolute;
-	padding:0 20px 0 10px;
-	height:30px;
-	line-height:32px;
-	background:#ddd;
-	top:-10px;
-	right:-10px;
-	
-	white-space:nowrap;
-	border-top-right-radius:10px;
-}
-
-.project-soon .soon:before {
-	content:"";
-	
-	position:absolute;
-	bottom:-10px;
-	right:0;
-	width:10px;
-	height:10px;
-	
-	background:#ddd;
-}
-
-.project-soon .soon:after {
-	content:"";
-	position:absolute;
-	bottom:-20px;
-	right:0px;
-	width:10px;
-	height:20px;
-
-	background:#aaa;
-	border-top-right-radius:10px;
-	border-bottom-right-radius:10px;
 }
 
 .badges > span,
@@ -212,23 +178,26 @@ span.project {
 /*
  * Project icons
  */
-.icons i {
+.technology {
 	display:inline-block;
 	/*vertical-align:middle;*/
 	width:16px;
 	height:16px;
 	background-repeat:no-repeat;
 	background-size:16px 16px;
-	
+
 	margin:1px 0 0 .5em;
 }
 
-.icons i.laravel { background-image: url(../img/laravel.png);}
-.icons i.jquery { background-image: url(../img/jquery.png);}
-.icons i.slim { background-image: url(../img/slim.png);}
-.icons i.php { background-image: url(../img/php.png);}
-.icons i.python { background-image: url(../img/python.png);}
-.icons i.js { background-image: url(../img/js.png);}
+.technology-laravel { background-image: url(../img/laravel.png);}
+.technology-jquery { background-image: url(../img/jquery.png);}
+.technology-slim { background-image: url(../img/slim.png);}
+.technology-php { background-image: url(../img/php.png);}
+.technology-python { background-image: url(../img/python.png);}
+.technology-js { background-image: url(../img/js.png);}
+.technology-java { background-image: url(../img/java.gif);}
+.technology-wordpress { background-image: url(../img/wpmini-blue.png);}
+/* react */
 
 /*
  * Blog post
