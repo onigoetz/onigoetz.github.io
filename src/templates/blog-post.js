@@ -22,7 +22,7 @@ export default function BlogPostTemplate({
       )}
 
       <article className="Post">
-        <h1>{post.title}</h1>
+        <h1 className="Post--title">{post.title}</h1>
         <p>
           {<span className="Post--date">{post.publishDate}</span>}
 
