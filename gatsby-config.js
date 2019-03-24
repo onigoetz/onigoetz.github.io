@@ -14,6 +14,14 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-3551397-2",
+        anonymize: true,
+        respectDNT: true
+      }
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: {
         spaceId: CTF_SPACE_ID,
