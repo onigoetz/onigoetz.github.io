@@ -1,7 +1,7 @@
 /*
  * Blog post
  */
-.post, .well {
+.post, .well, .Page {
 	padding:1rem;
 	border-radius:1em;
 	margin-top:2em;

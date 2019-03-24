@@ -2,17 +2,46 @@ import React from "react";
 import Layout from "../components/Layout";
 
 export default class Projects extends React.Component {
-    render() {
-        return <Layout title="Contact">
-            <div className="well">
-                <iframe 
-                    title="Contact Form"
-                    frameborder="0" 
-                    src="http://www.123contactform.com/jsform_intermediate.html?url=js-form-username-377202.html&amp;xdm_e=http%3A%2F%2Fwww.onigoetz.ch&amp;xdm_c=default7500&amp;xdm_p=1" 
-                    height="650"
-                    width="100%"
-                ></iframe>
+  render() {
+    return (
+      <Layout title="Contact">
+        <div className="Page">
+          <h2>Contact</h2>
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            className="Form"
+          >
+            <div className="Form__field">
+              <label htmlFor="name">Name</label>
+              <input className="Input" type="text" name="name" id="name" />
             </div>
-        </Layout>
-    }
+            <div className="Form__field">
+              <label htmlFor="email">Email</label>
+              <input className="Input" type="text" name="email" id="email" />
+            </div>
+            <div className="Form__field">
+              <label htmlFor="message">Message</label>
+              <textarea
+                className="Textarea"
+                name="message"
+                id="message"
+                rows="6"
+              />
+            </div>
+            <ul className="Form__actions">
+              <input
+                className="Button Button--secondary"
+                type="reset"
+                value="Clear"
+              />{" "}
+              <input className="Button" type="submit" value="Send Message" />
+            </ul>
+          </form>
+        </div>
+      </Layout>
+    );
+  }
 }

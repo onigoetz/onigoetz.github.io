@@ -1,4 +1,3 @@
-
 /*
  * Main Style
  */
@@ -14,7 +13,7 @@
 /*
 ** Layout
 */
-header, footer, article.post, .well {
+header, footer, article.post, .well, .Page {
 	background:#fff;
 	background: rgba(255,255,255, 0.6);
 }

@@ -1,0 +1,44 @@
+.Form__field {
+    margin-bottom: 1em;
+}
+
+.Form__actions {
+    text-align: right;
+}
+
+.Input, .Textarea {
+    border: 1px solid #bbb;
+    width: 100%;
+    border-radius: 2px;
+    padding: .3rem .5rem;
+}
+
+.Input:focus, .Textarea:focus {
+    box-shadow: 0 0 2px #03A9F4;
+}
+
+.Button {
+    appearance: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s ease-in-out,box-shadow .2s ease-in-out,color .2s ease-in-out;
+    white-space: nowrap;
+
+    font-size: 1.2rem;
+    height: 2.5em;
+    line-height: 0.8em;
+    padding: .3em .5em;
+    border-radius: 2px;
+
+    border: 1px solid rgba(0,0,0, 0.1);
+    background-color: #03A9F4;
+    
+    color: #fff;
+}
+
+.Button--secondary {
+    background-color: #ddd;
+    color: #333;
+}
