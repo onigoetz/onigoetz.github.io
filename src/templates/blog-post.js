@@ -1,7 +1,6 @@
 
 import React from 'react'
 import { graphql } from 'gatsby';
-import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 
 import heroStyles from '../components/hero.module.css'

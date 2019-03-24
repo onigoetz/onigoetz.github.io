@@ -8,6 +8,7 @@ const { CTF_SPACE_ID, CTF_CDA_TOKEN } = process.env;
 
 module.exports = {
   plugins: [
+    "gatsby-remark-prismjs",
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
