@@ -5,15 +5,20 @@ export default class Projects extends React.Component {
   render() {
     return (
       <Layout title="Contact">
+        <h1>Contact</h1>
         <div className="Page">
-          <h2>Contact</h2>
           <form
             name="contact"
-            method="post"
+            method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className="Form"
           >
+            <p style={{ display: "none" }}>
+              <label>
+                Don’t fill this out if you're human: <input name="bot-field" />
+              </label>
+            </p>
             <div className="Form__field">
               <label htmlFor="name">Name</label>
               <input className="Input" type="text" name="name" id="name" />

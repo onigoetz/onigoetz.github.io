@@ -17,12 +17,10 @@ ul.social-buttons li {
 
 /* project item */
 .project {
-	background: rgba(255,255,255,.7);
-	padding:.2rem .5rem .2rem 1rem;
-	margin:1.5em 0 0 0;
+	background: rgba(255,255,255, 0.8);
+	padding: .2rem .5rem .2rem 1rem;
+	margin: 1.5em 0 0 0;
 
-	-webkit-border-radius: 1rem;
-	-moz-border-radius: 1rem;
 	border-radius: 1rem;
 }
 
