@@ -1,0 +1,89 @@
+
+/*
+ * Main Style
+ */
+ body {
+	background: url("../static/img/bg.gif") fixed;
+	color:#333;
+
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*
+** Layout
+*/
+header, footer, article.post, .well {
+	background:#fff;
+	background: rgba(255,255,255, 0.6);
+}
+
+header {
+	padding-bottom:1em;
+}
+
+h1 + p {
+	margin-top:0;
+}
+
+.container {
+	max-width:960px;
+	margin:0 auto;
+	padding:10px;
+}
+
+.container.content {
+	max-width:700px;
+}
+
+footer .container {
+	padding:26px 10px;
+}
+
+footer p {
+	margin:13px 0;
+}
+
+/*
+ * Sticky Footer
+ */
+html, body, #__gatsby { height: 100%; }
+div#wrapper {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -120px;
+}
+div#wrapper > .container {
+	padding-bottom:120px;
+}
+footer { height: 100px; margin-top:20px; }
+
+
+/*
+ * Social buttons
+ */
+.social {
+	float:right;
+}
+.social .buttons a {
+	display:inline-block;
+	background-image: url("../static/img/social-enfuzed.png");
+	background-size: 230px 110px;
+	width:48px;
+	height:48px;
+	text-decoration:none;
+}
+
+.social .buttons a.twitter 		 {background-position:-61px -60px}
+.social .buttons a.twitter:hover {background-position:-61px 0}
+.social .buttons a.gplus 	 	 {background-position:-181px -60px}
+.social .buttons a.gplus:hover 	 {background-position:-181px 0}
+.social .buttons a.linkedin		 {background-position:-121px -60px}
+.social .buttons a.linkedin:hover{background-position:-121px 0}
+.social .buttons a.github  		 {background-position:-1px -60px}
+.social .buttons a.github:hover  {background-position:-1px 0}
+
+

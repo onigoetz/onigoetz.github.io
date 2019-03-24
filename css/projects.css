@@ -1,0 +1,104 @@
+/*
+ * Projects
+ */
+
+/* project list */
+h3 + p {
+	margin-top:-10px;
+}
+
+ul.social-buttons {
+	list-style-type:none;
+}
+
+ul.social-buttons li {
+	display:inline-block;
+}
+
+/* project item */
+.project {
+	background: rgba(255,255,255,.7);
+	padding:.2rem .5rem .2rem 1rem;
+	margin:1.5em 0 0 0;
+
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	border-radius: 1rem;
+}
+
+.project .project {
+	margin:1rem;
+}
+
+.project p {
+	margin:.5em 0;
+}
+
+.project p:last-child {
+	margin-bottom:0;
+}
+
+.project h4 {
+	margin-top:.5rem;
+}
+
+.project-active {
+	border-left:5px solid #5cb85c;
+}
+
+.project-wip {
+	border-left:5px solid #5bc0de;
+	position:relative;
+}
+
+.project-unmaintained {
+	border-left:5px solid #f0ad4e;
+}
+
+.project-abandoned {
+	border-left:5px solid #d9534f;
+}
+
+span.project {
+	display:inline-block;
+	padding:5px 10px;
+	border-left-width:8px;
+	height:20px;
+	line-height:22px;
+	vertical-align:middle;
+}
+
+.badges > span,
+.badges > a {
+	margin-right:10px;
+}
+
+.badges > a {
+	display:inline-block;
+	/*vertical-align:top;*/
+	line-height:0;
+}
+
+/*
+ * Project icons
+ */
+.technology {
+	display:inline-block;
+	/*vertical-align:middle;*/
+	width:16px;
+	height:16px;
+	background-repeat:no-repeat;
+	background-size:16px 16px;
+
+	margin:1px 0 0 .5em;
+}
+
+.technology-laravel { background-image: url(../static/technologies/laravel.png);}
+.technology-jquery { background-image: url(../static/technologies/jquery.png);}
+.technology-slim { background-image: url(../static/technologies/slim.png);}
+.technology-php { background-image: url(../static/technologies/php.png);}
+.technology-python { background-image: url(../static/technologies/python.png);}
+.technology-js { background-image: url(../static/technologies/javascript.png);}
+.technology-java { background-image: url(../static/technologies/java.gif);}
+.technology-wordpress { background-image: url(../static/technologies/wordpress.png);}
+/* react */

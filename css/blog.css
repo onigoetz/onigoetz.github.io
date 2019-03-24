@@ -1,0 +1,16 @@
+/*
+ * Blog post
+ */
+.post, .well {
+	padding:1rem;
+	border-radius:1em;
+	margin-top:2em;
+}
+
+.post > h2 {
+	margin-top:0;
+}
+
+.post .date {
+	color:#999;
+}

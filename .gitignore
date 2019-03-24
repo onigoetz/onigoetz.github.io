@@ -1,2 +1,4 @@
-_gh_pages/*
-vendor
+public
+node_modules
+.cache
+.env
