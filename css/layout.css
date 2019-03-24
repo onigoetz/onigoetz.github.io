@@ -13,7 +13,7 @@
 /*
 ** Layout
 */
-article.post, .well, .Page {
+.Post, .Page {
 	background:#fff;
 	background: rgba(255,255,255, 0.8);
 }

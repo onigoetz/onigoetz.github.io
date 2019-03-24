@@ -1,50 +1,60 @@
+import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import React from 'react'
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image'
+import Technology from "../components/Technology";
+import heroStyles from "../components/hero.module.css";
+import Layout from "../components/Layout";
 
-import heroStyles from '../components/hero.module.css'
-import Layout from '../components/Layout';
-
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.contentfulBlogPost
-    //const siteTitle = this.props.data.site.siteMetadata.title
-
-    return (
-      <Layout title={post.title}>
-        {post.heroImage && <div className={heroStyles.hero}>
-          <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes} />
-        </div>}
-
-        <article className="post">
-            <h1>{post.title}</h1>
-            {
-            <span className="date">
-                {post.publishDate}
-            </span>
-            }
-            {post.tags && post.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
-            <div
-            dangerouslySetInnerHTML={{
-              __html: post.body.childMarkdownRemark.html,
-            }}
+export default function BlogPostTemplate({
+  data: { contentfulBlogPost: post }
+}) {
+  return (
+    <Layout title={post.title}>
+      {post.heroImage && (
+        <div className={heroStyles.hero}>
+          <Img
+            className={heroStyles.heroImage}
+            alt={post.title}
+            sizes={post.heroImage.sizes}
           />
-        </article>
-      </Layout>
-    )
-  }
-}
+        </div>
+      )}
 
-export default BlogPostTemplate
+      <article className="Post">
+        <h1>{post.title}</h1>
+        <p>
+          {<span className="Post--date">{post.publishDate}</span>}
+
+          {post.technologies &&
+            post.technologies.map(tag => <Technology technology={tag} />)}
+
+          {post.tags &&
+            post.tags.map(tag => (
+              <span key={tag} className="Post--tag">
+                {tag}
+              </span>
+            ))}
+        </p>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: post.body.childMarkdownRemark.html
+          }}
+        />
+      </article>
+    </Layout>
+  );
+}
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
+      tags
+      technologies
       heroImage {
-        title,
+        title
         sizes(maxWidth: 1180, background: "rgb:000000") {
           ...GatsbyContentfulSizes_withWebp
         }
@@ -56,4 +66,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

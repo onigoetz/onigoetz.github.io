@@ -1,16 +1,20 @@
 /*
  * Blog post
  */
-.post, .well, .Page {
+.Post, .Page {
 	padding:1rem;
 	border-radius:1em;
 	margin-top:2em;
 }
 
-.post > h2 {
+.Post > h1 {
 	margin-top:0;
 }
 
-.post .date {
+.Post--date {
 	color:#999;
+}
+
+.Post--tag {
+	margin-left: 0.5em;
 }
