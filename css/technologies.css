@@ -1,0 +1,22 @@
+/*
+ * Project icons
+ */
+.technology {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background-repeat:no-repeat;
+	background-size:16px 16px;
+
+	margin:1px 0 0 .5em;
+}
+
+.technology-laravel { background-image: url(../static/technologies/laravel.png);}
+.technology-jquery { background-image: url(../static/technologies/jquery.png);}
+.technology-slim { background-image: url(../static/technologies/slim.png);}
+.technology-php { background-image: url(../static/technologies/php.png);}
+.technology-python { background-image: url(../static/technologies/python.png);}
+.technology-javascript { background-image: url(../static/technologies/javascript.png);}
+.technology-java { background-image: url(../static/technologies/java.gif);}
+.technology-wordpress { background-image: url(../static/technologies/wordpress.png);}
+.technology-react { background-image: url(../static/technologies/react.png);}

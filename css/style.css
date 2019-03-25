@@ -4,7 +4,4 @@
 @import "./code.css";
 @import "./layout.css";
 
-/* pages */
-@import "./blog.css";
-@import "./projects.css";
-@import "./contact.css";
+@import "./technologies.css";

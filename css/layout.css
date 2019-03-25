@@ -1,121 +1,60 @@
 /*
  * Main Style
  */
- body {
-	background: #e6fffe;
-	color:#333;
+body {
+  background: #e6fffe;
+  color: #333;
 
-    font-family: sans-serif;
-    font-size: 14px;
-    line-height: 22px;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 /*
 ** Layout
 */
-.Post, .Page {
-	background:#fff;
-	background: rgba(255,255,255, 0.8);
-}
-
-h1 + p {
-	margin-top:0;
-}
-
-.container {
-	max-width:960px;
-	margin:0 auto;
-	padding:10px;
-}
-
-.container.content {
-	max-width:700px;
-}
-
-/*
- * Sticky Footer
- */
-html, body, #__gatsby { height: 100%; }
-div#wrapper {
-    width: 100%;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-}
-div#wrapper > .container {
-	padding-bottom:120px;
-}
-
-.Link--active {
-	color: #333;
-}
-
-aside {
-	background: rgba(255,255,255, 0.8);
-}
-
-aside a {
-	display: block;
-}
-
-aside ul {
-	list-style-type: none;
-	margin: 0;
-	margin-bottom: 2em;
-	padding: 0;
-}
-
-aside ul li {
-	font-size: 1.3em;
-	margin-bottom: 0.3em;
-}
 
 @media (min-width: 720px) {
-
-	html {
-		padding-left: 280px;
-		padding-right: 30px;
-	}
-
-	aside {
-		overflow-y: auto;
-		overflow-x: none;
-
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-
-		width: 250px;
-		padding: 15px;
-	}
+  html {
+    padding-left: 280px;
+    padding-right: 30px;
+  }
 }
-
 
 /*
  * Social buttons
  */
 .SocialButtons a {
-	display:inline-block;
-	background-image: url("../static/img/social-enfuzed.png");
-	background-size: 230px 110px;
-	width:48px;
-	height:48px;
-	text-decoration:none;
+  display: inline-block;
+  background-image: url("../static/img/social-enfuzed.png");
+  background-size: 230px 110px;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
 
-	padding-left: 55px;
-	line-height: 48px;
+  padding-left: 55px;
+  line-height: 48px;
 }
 
 .SocialButtons a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-.SocialButtons a.twitter 		 {background-position:-61px -60px}
-.SocialButtons a.twitter:hover {background-position:-61px 0}
-.SocialButtons a.linkedin		 {background-position:-121px -60px}
-.SocialButtons a.linkedin:hover{background-position:-121px 0}
-.SocialButtons a.github  		 {background-position:-1px -60px}
-.SocialButtons a.github:hover  {background-position:-1px 0}
-
-
+.SocialButtons a.twitter {
+  background-position: -61px -60px;
+}
+.SocialButtons a.twitter:hover {
+  background-position: -61px 0;
+}
+.SocialButtons a.linkedin {
+  background-position: -121px -60px;
+}
+.SocialButtons a.linkedin:hover {
+  background-position: -121px 0;
+}
+.SocialButtons a.github {
+  background-position: -1px -60px;
+}
+.SocialButtons a.github:hover {
+  background-position: -1px 0;
+}
