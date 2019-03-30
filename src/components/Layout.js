@@ -34,9 +34,9 @@ const Aside = styled.aside`
   @media (min-width: 720px) {
     & {
       overflow-y: auto;
-      overflow-x: none;
+      overflow-x: hidden;
 
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       bottom: 0;
