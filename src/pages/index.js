@@ -30,6 +30,7 @@ export default function Projects() {
       render={({ allContentfulProjects: { nodes: projects } }) => {
         return (
           <Layout title="Blog">
+            <h1>My Projects</h1>
             <ProjectGrid projects={projects} />
           </Layout>
         );

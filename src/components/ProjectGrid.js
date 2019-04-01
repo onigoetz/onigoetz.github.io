@@ -16,11 +16,9 @@ const ProjectCount = styled.span`
 
 const FilterStatus = styled.label`
     margin-right: 1em;
-
     span {
         line-height: 20px;
     }
-    
 
     input {
         position: absolute; // take it out of document flow
@@ -36,6 +34,7 @@ const FilterStatus = styled.label`
     input + span:before {
         content: '';
         margin-right: 10px;
+        margin-top: -4px;
         display: inline-block;
         vertical-align: text-top;
         width: 20px;
@@ -77,7 +76,7 @@ const FilterStatus = styled.label`
         display: block;
         position: absolute;
         left: 6px;
-        top: 2px;
+        top: -2px;
         width: 5px;
         height: 10px;
         border-bottom: 3px solid white;
@@ -92,6 +91,13 @@ const order = {
   unmaintained: 3,
   abandoned: 4
 };
+
+const titles = {
+  active: "Active",
+  wip: "Work In Progress",
+  unmaintained: "Unmaintained",
+  abandoned: "Abandoned"
+}
 
 export default function ProjectGrid({ projects }) {
   const [visibleStatus, setStatusVisibility] = useState({
@@ -113,7 +119,9 @@ export default function ProjectGrid({ projects }) {
             {visibleProjects.length} / {projects.length} projects visible
           </ProjectCount>
 
-          {Object.keys(order).map(status => (
+          {Object.keys(order)
+            .filter(status => projects.filter(project => project.status == status).length)
+            .map(status => (
             <FilterStatus>
               <input
                 type="checkbox"
@@ -125,7 +133,7 @@ export default function ProjectGrid({ projects }) {
                   })
                 }
               />
-              <span>{status}</span>
+              <span>{titles[status]}</span>
             </FilterStatus>
           ))}
         </CardItem>

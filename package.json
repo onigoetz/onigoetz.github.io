@@ -7,6 +7,7 @@
     "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-linaria": "^1.1.1",
     "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-react-svg": "^2.1.1",
     "gatsby-plugin-sharp": "^2.0.30",
     "gatsby-remark-prismjs": "^3.2.6",
     "gatsby-source-contentful": "^2.0.42",

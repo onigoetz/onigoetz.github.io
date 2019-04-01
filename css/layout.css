@@ -14,47 +14,14 @@ body {
 ** Layout
 */
 
+html {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @media (min-width: 720px) {
   html {
     padding-left: 280px;
     padding-right: 30px;
   }
-}
-
-/*
- * Social buttons
- */
-.SocialButtons a {
-  display: inline-block;
-  background-image: url("../static/img/social-enfuzed.png");
-  background-size: 230px 110px;
-  width: 48px;
-  height: 48px;
-  text-decoration: none;
-
-  padding-left: 55px;
-  line-height: 48px;
-}
-
-.SocialButtons a:hover {
-  text-decoration: underline;
-}
-
-.SocialButtons a.twitter {
-  background-position: -61px -60px;
-}
-.SocialButtons a.twitter:hover {
-  background-position: -61px 0;
-}
-.SocialButtons a.linkedin {
-  background-position: -121px -60px;
-}
-.SocialButtons a.linkedin:hover {
-  background-position: -121px 0;
-}
-.SocialButtons a.github {
-  background-position: -1px -60px;
-}
-.SocialButtons a.github:hover {
-  background-position: -1px 0;
 }
