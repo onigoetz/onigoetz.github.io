@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import useSWR from "swr";
+import fetch from "isomorphic-unfetch";
+
 import styles from "./GitHubButton.module.css";
 
 /*
@@ -6,22 +9,7 @@ import styles from "./GitHubButton.module.css";
  ** created by Benjy Cui https://github.com/benjycui
  */
 
-function ajaxGet(url, callback) {
-  if (typeof XDomainRequest !== "undefined") {
-    callback(null);
-    return null;
-  }
-
-  const xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-      callback(JSON.parse(xhr.responseText));
-    }
-  };
-  xhr.open("GET", url, true);
-  xhr.send();
-  return xhr;
-}
+const cacheForever = {};
 
 const typeToLabel = {
   stargazers: "Star",
@@ -34,18 +22,27 @@ const typeToPath = {
 };
 
 export default function GitHubButton({ namespace, repo, type }) {
-  const [count, setCount] = useState(null);
-
-  useEffect(() => {
-    const url = `//api.github.com/repos/${namespace}/${repo}`;
-    const xhr = ajaxGet(url, setCount);
-
-    return () => {
-      if (xhr) {
-        xhr.abort();
+  const { data, error } = useSWR(
+    `//api.github.com/repos/${namespace}/${repo}`,
+    async (url) => {
+      // Return from cache if we already have it.
+      if (cacheForever.hasOwnProperty(url)) {
+        return cacheForever[url];
       }
-    };
-  }, [namespace, repo]);
+
+      // Cache the fetching promise
+      cacheForever[url] = fetch(url)
+        .then((response) => res.json())
+        .catch(() => {
+          // Delete from cache if fetching failed
+          delete cacheForever[url];
+        });
+
+      // Return the fetcher
+      return cacheForever[url];
+    },
+    { revalidateOnFocus: false }
+  );
 
   return (
     <div className={styles.widget}>
@@ -82,7 +79,7 @@ export default function GitHubButton({ namespace, repo, type }) {
         )}
         <span>{typeToLabel[type]}</span>
       </a>
-      {count !== null && (
+      {data && (
         <a
           className={styles.social_count}
           target="_blank"
@@ -90,7 +87,7 @@ export default function GitHubButton({ namespace, repo, type }) {
             typeToPath[type] || type
           }/`}
         >
-          {count[`${type}_count`]}
+          {data[`${type}_count`]}
         </a>
       )}
     </div>
