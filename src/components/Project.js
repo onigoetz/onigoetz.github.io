@@ -30,15 +30,15 @@ export default function Project({ project }) {
         </h4>
       </CardItem>
       <CardItem>
-          <div className={styles.status}>
-              <Status status={project.status} />
-              {project.githubRepository && (
-                  <>
-                      <GitHubButton type="stargazers" namespace={owner} repo={repo} />
-                      <GitHubButton type="forks" namespace={owner} repo={repo} />
-                  </>
-              )}
-          </div>
+        <div className={styles.status}>
+          <Status status={project.status} />
+          {project.githubRepository && (
+            <>
+              <GitHubButton type="stargazers" namespace={owner} repo={repo} />
+              <GitHubButton type="forks" namespace={owner} repo={repo} />
+            </>
+          )}
+        </div>
 
         {project.badges && (
           <span
@@ -52,7 +52,9 @@ export default function Project({ project }) {
         {project.documentation && (
           <>
             <br />
-            <a href={project.documentation} target="_blank" rel="noopener">Documentation</a>
+            <a href={project.documentation} target="_blank" rel="noopener">
+              Documentation
+            </a>
           </>
         )}
       </CardItem>

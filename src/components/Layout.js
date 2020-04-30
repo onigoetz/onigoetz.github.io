@@ -16,7 +16,10 @@ export default ({ title, children }) => {
       <Head>
         <title>{title ? `${title} · Onigoetz.ch` : `Onigoetz.ch`}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="My personal website, with my personal projects and a few articles." />
+        <meta
+          name="description"
+          content="My personal website, with my personal projects and a few articles."
+        />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Stéphane Goetz" />
       </Head>

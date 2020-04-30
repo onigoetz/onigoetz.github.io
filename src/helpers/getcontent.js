@@ -7,8 +7,6 @@ require("dotenv").config();
 const SPACE = process.env.CTF_SPACE_ID;
 const TOKEN = process.env.CTF_CDA_TOKEN;
 
-console.log({ SPACE, TOKEN });
-
 const client = contentful.createClient({
   space: SPACE,
   accessToken: TOKEN,
@@ -24,10 +22,24 @@ async function getFieldValue([key, value]) {
       maxWidth: 1180,
       background: "rgb:000000",
     });
-    console.log(value);
   }
 
   return [key, value.fields ? value.fields : value];
+}
+
+// This whole thing can be removed with `Object.fromEntries`
+// once Netlify moves their build environment to Node 12
+async function mapFields(item) {
+  const fields = await Promise.all(
+    Object.entries(item.fields ? item.fields : item).map(getFieldValue)
+  );
+
+  const out = {};
+  fields.forEach(([key, value]) => {
+    out[key] = value;
+  });
+
+  return out;
 }
 
 async function getContent() {
@@ -36,27 +48,11 @@ async function getContent() {
     console.log("> Getting content for", type);
     const entries = await client.getEntries({ content_type: type });
 
-    console.log(path.join(process.cwd(), "data", `${type}.json`));
-
     fs.writeFileSync(
       path.join(process.cwd(), "data", `${type}.json`),
-      JSON.stringify(
-        await Promise.all(
-          entries.items.map(async (item) =>
-            Object.fromEntries(
-              await Promise.all(
-                Object.entries(item.fields ? item.fields : item).map(
-                  getFieldValue
-                )
-              )
-            )
-          )
-        ),
-        null,
-        2
-      )
+      JSON.stringify(await Promise.all(entries.items.map(mapFields)), null, 2)
     );
-    console.log("> Content gotten and written for ", type);
+    console.log("> Content gotten and written for", type);
   }
   return true;
 }
