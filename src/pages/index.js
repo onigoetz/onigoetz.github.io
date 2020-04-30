@@ -2,39 +2,24 @@ import React from "react";
 import Layout from "../components/Layout";
 import ProjectGrid from "../components/ProjectGrid";
 
-import { StaticQuery, graphql } from "gatsby";
-
-export default function Projects() {
+export default function Projects({ projects }) {
   return (
-    <StaticQuery
-      query={graphql`
-        query AllProjects {
-          allContentfulProjects {
-            nodes {
-              title
-              status
-              githubRepository
-              technologies
-              description
-              badges {
-                childMarkdownRemark {
-                  html
-                }
-              }
-              url
-              documentation
-            }
-          }
-        }
-      `}
-      render={({ allContentfulProjects: { nodes: projects } }) => {
-        return (
-          <Layout title="Blog">
-            <h1>My Projects</h1>
-            <ProjectGrid projects={projects} />
-          </Layout>
-        );
-      }}
-    />
+    <Layout title="Blog">
+      <h1>My Projects</h1>
+      <ProjectGrid projects={projects} />
+    </Layout>
   );
 }
+
+Projects.getInitialProps = async (ctx) => {
+  const projects = require("../../data/projects.json");
+
+  const marked = require("marked");
+  projects.forEach((item) => {
+    if (item.badges) {
+      item.badges = marked(item.badges);
+    }
+  });
+
+  return { projects };
+};

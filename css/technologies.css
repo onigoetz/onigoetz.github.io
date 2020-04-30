@@ -2,21 +2,48 @@
  * Project icons
  */
 .technology {
-	display:inline-block;
-	width:16px;
-	height:16px;
-	background-repeat:no-repeat;
-	background-size:16px 16px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    transform: translateY(.1em);
 
-	margin:1px 0 0 .5em;
+    margin: 1px 0 0 .5em;
 }
 
-.technology-laravel { background-image: url(../static/technologies/laravel.png);}
-.technology-jquery { background-image: url(../static/technologies/jquery.png);}
-.technology-slim { background-image: url(../static/technologies/slim.png);}
-.technology-php { background-image: url(../static/technologies/php.png);}
-.technology-python { background-image: url(../static/technologies/python.png);}
-.technology-javascript { background-image: url(../static/technologies/javascript.png);}
-.technology-java { background-image: url(../static/technologies/java.gif);}
-.technology-wordpress { background-image: url(../static/technologies/wordpress.png);}
-.technology-react { background-image: url(../static/technologies/react.png);}
+.technology-laravel {
+    background-image: url(./assets/technologies/laravel.svg);
+}
+
+.technology-jquery {
+    background-image: url(./assets/technologies/jquery.png);
+}
+
+.technology-slim {
+    background-image: url(./assets/technologies/slim.png);
+}
+
+.technology-php {
+    background-image: url(./assets/technologies/php.svg);
+}
+
+.technology-python {
+    background-image: url(./assets/technologies/python.svg);
+}
+
+.technology-javascript {
+    background-image: url(./assets/technologies/javascript.svg);
+}
+
+.technology-java {
+    background-image: url(./assets/technologies/java.gif);
+}
+
+.technology-wordpress {
+    background-image: url(./assets/technologies/wordpress.svg);
+}
+
+.technology-react {
+    background-image: url(./assets/technologies/react.svg);
+}

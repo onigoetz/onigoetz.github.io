@@ -1,5 +1,6 @@
-import { styled } from "linaria/react";
+import React from "react";
+import styles from "./Date.module.css";
 
-export default styled.span`
-  color: #999;
-`;
+export default function Date({ children }) {
+  return <span className={styles.item}>{children}</span>;
+}

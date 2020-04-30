@@ -1,22 +1,11 @@
 import React from "react";
-import { styled } from "linaria/react";
 
 import Card, { CardItem } from "./Card";
 import GitHubButton from "./GitHubButton";
 import Technology from "./Technology";
 import Status from "./Status";
 
-const StatusBadges = styled.span`
-  a,
-  p {
-    display: inline-block;
-  }
-
-  > a {
-    display: inline-block;
-    line-height: 0;
-  }
-`;
+import styles from "./Project.module.css";
 
 export default function Project({ project }) {
   const [owner, repo] = (project.githubRepository || "/").split("/");
@@ -34,26 +23,27 @@ export default function Project({ project }) {
           >
             {project.title}
             {project.technologies &&
-              project.technologies.map(tag => (
+              project.technologies.map((tag) => (
                 <Technology key={tag} technology={tag} />
               ))}
           </a>
         </h4>
       </CardItem>
       <CardItem>
-        <Status status={project.status} />
-        {project.githubRepository && (
-          <>
-            <GitHubButton type="stargazers" namespace={owner} repo={repo} />
-            <GitHubButton type="forks" namespace={owner} repo={repo} />
-          </>
-        )}
-        <br />
+          <div className={styles.status}>
+              <Status status={project.status} />
+              {project.githubRepository && (
+                  <>
+                      <GitHubButton type="stargazers" namespace={owner} repo={repo} />
+                      <GitHubButton type="forks" namespace={owner} repo={repo} />
+                  </>
+              )}
+          </div>
+
         {project.badges && (
-          <StatusBadges
-            dangerouslySetInnerHTML={{
-              __html: project.badges.childMarkdownRemark.html
-            }}
+          <span
+            className={styles.badges}
+            dangerouslySetInnerHTML={{ __html: project.badges }}
           />
         )}
       </CardItem>
@@ -62,7 +52,7 @@ export default function Project({ project }) {
         {project.documentation && (
           <>
             <br />
-            <a href={project.documentation}>Documentation</a>
+            <a href={project.documentation} target="_blank" rel="noopener">Documentation</a>
           </>
         )}
       </CardItem>

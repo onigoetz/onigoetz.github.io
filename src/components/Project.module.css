@@ -1,0 +1,16 @@
+
+.badges a,
+.badges p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.badges > a {
+    display: inline-block;
+    line-height: 0;
+}
+
+.status > div {
+    display: inline-block;
+    margin-right: 0.5rem;
+}

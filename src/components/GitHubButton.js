@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "linaria/react";
+import styles from "./GitHubButton.module.css";
 
 /*
  ** Heavily inspired by https://www.npmjs.com/package/react-github-button
@@ -22,11 +22,6 @@ function ajaxGet(url, callback) {
   xhr.send();
   return xhr;
 }
-export function classNames(classSet) {
-  return Object.keys(classSet)
-    .filter(key => classSet[key])
-    .join(" ");
-}
 
 const typeToLabel = {
   stargazers: "Star",
@@ -38,93 +33,7 @@ const typeToPath = {
   forks: "network"
 };
 
-const GHWrapper = styled.span`
-  font: bold 11px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  height: 25px;
-  line-height: 25px;
-  overflow: hidden;
-  margin-left: 0.5em;
-`;
 
-const GHBase = styled.a`
-  padding: 2px 5px 2px 4px;
-  color: #333;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  border-radius: 3px;
-`;
-
-const GHBtn = styled(GHBase)`
-  background-color: #eee;
-  background-image: linear-gradient(to bottom, #fcfcfc 0, #eee 100%);
-  background-repeat: no-repeat;
-  border: 1px solid #d5d5d5;
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    background-color: #ddd;
-    background-image: linear-gradient(to bottom, #eee 0, #ddd 100%);
-    border-color: #ccc;
-  }
-  &:active {
-    background-image: none;
-    background-color: #dcdcdc;
-    border-color: #b5b5b5;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
-  }
-`;
-
-const GHIcon = styled.span`
-  width: 14px;
-  height: 14px;
-  margin-right: 4px;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjQwcHgiIGhlaWdodD0iNDBweCIgdmlld0JveD0iMTIgMTIgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMTIgMTIgNDAgNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiMzMzMzMzMiIGQ9Ik0zMiAxMy40Yy0xMC41IDAtMTkgOC41LTE5IDE5YzAgOC40IDUuNSAxNS41IDEzIDE4YzEgMC4yIDEuMy0wLjQgMS4zLTAuOWMwLTAuNSAwLTEuNyAwLTMuMiBjLTUuMyAxLjEtNi40LTIuNi02LjQtMi42QzIwIDQxLjYgMTguOCA0MSAxOC44IDQxYy0xLjctMS4yIDAuMS0xLjEgMC4xLTEuMWMxLjkgMC4xIDIuOSAyIDIuOSAyYzEuNyAyLjkgNC41IDIuMSA1LjUgMS42IGMwLjItMS4yIDAuNy0yLjEgMS4yLTIuNmMtNC4yLTAuNS04LjctMi4xLTguNy05LjRjMC0yLjEgMC43LTMuNyAyLTUuMWMtMC4yLTAuNS0wLjgtMi40IDAuMi01YzAgMCAxLjYtMC41IDUuMiAyIGMxLjUtMC40IDMuMS0wLjcgNC44LTAuN2MxLjYgMCAzLjMgMC4yIDQuNyAwLjdjMy42LTIuNCA1LjItMiA1LjItMmMxIDIuNiAwLjQgNC42IDAuMiA1YzEuMiAxLjMgMiAzIDIgNS4xYzAgNy4zLTQuNSA4LjktOC43IDkuNCBjMC43IDAuNiAxLjMgMS43IDEuMyAzLjVjMCAyLjYgMCA0LjYgMCA1LjJjMCAwLjUgMC40IDEuMSAxLjMgMC45YzcuNS0yLjYgMTMtOS43IDEzLTE4LjFDNTEgMjEuOSA0Mi41IDEzLjQgMzIgMTMuNHoiLz48L3N2Zz4=");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  display: inline-block;
-  transform: translateY(3px);
-`;
-
-const GHText = styled.span``;
-
-const GHCount = styled(GHBase)`
-  position: relative;
-  margin-left: 4px;
-  background-color: #fafafa;
-  border: 1px solid #d4d4d4;
-
-  &:hover,
-  &:focus {
-    color: #4183c4;
-  }
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
-  }
-  &:before {
-    top: 50%;
-    left: -3px;
-    margin-top: -4px;
-    border-width: 4px 4px 4px 0;
-    border-right-color: #fafafa;
-  }
-  &:after {
-    top: 50%;
-    left: -4px;
-    z-index: -1;
-    margin-top: -5px;
-    border-width: 5px 5px 5px 0;
-    border-right-color: #d4d4d4;
-  }
-`;
 
 export default class GitHubButton extends React.Component {
   state = {
@@ -163,20 +72,29 @@ export default class GitHubButton extends React.Component {
     const count = this.state.count;
 
     return (
-      <GHWrapper>
-        <GHBtn href={this.getRepoUrl()} target="_blank">
-          <GHIcon aria-hidden="true" />
-          <GHText>{typeToLabel[this.props.type]}</GHText>
-        </GHBtn>
+      <div className={styles.widget}>
+        <a className={styles.btn} href={this.getRepoUrl()} target="_blank">
+          {this.props.type == "stargazers" &&<svg viewBox="0 0 14 16" className={styles.octicon} style={{width: 14, height: 16}}
+               aria-hidden="true">
+            <path fillRule="evenodd"
+                  d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
+          </svg>}
+          {this.props.type == "forks" && <svg viewBox="0 0 10 16" className={styles.octicon} style={{width: 10, height: 16}}
+               aria-hidden="true">
+            <path fillRule="evenodd"
+                  d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path>
+          </svg>}
+          <span>{typeToLabel[this.props.type]}</span>
+        </a>
         {count !== null && (
-          <GHCount
+          <a className={styles.social_count}
             target="_blank"
             href={this.getCountUrl()}
           >
             {count}
-          </GHCount>
+          </a>
         )}
-      </GHWrapper>
+      </div>
     );
   }
 }

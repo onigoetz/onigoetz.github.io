@@ -1,0 +1,30 @@
+
+.container {
+    position: relative;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
+    border-radius: 0.25rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.item {
+    padding: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.item + .item {
+    padding-top: 0;
+}
+
+.item:last-child {
+    padding-bottom: 1.25rem;
+}
+
+.item > *:last-child {
+    margin-bottom: 0;
+
+}

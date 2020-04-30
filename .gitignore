@@ -1,5 +1,6 @@
-public
+out
 node_modules
 .cache
-.linaria-cache
+.next
 .env
+data/*.json

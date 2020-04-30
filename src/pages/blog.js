@@ -1,32 +1,25 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Post from "../components/Post";
-import { StaticQuery, graphql } from "gatsby";
 
-export default function Blog() {
-
-    return (
-      <StaticQuery
-    query={graphql`
-      query AllBlogPosts {
-        allContentfulBlogPost {
-          nodes {
-            slug,
-            title,
-            publishDate(formatString: "MMMM Do, YYYY"),
-            description {
-              description
-            }
-          }
-        }
-      }
-    `} render={({allContentfulBlogPost: {nodes: posts}}) => {
-      return <Layout title="Blog">
-        {posts.map(p => (
-          <Post key={p.title} post={p} />
-        ))}
-      </Layout>
-    }} />
-
-    );
+export default function Blog({ posts }) {
+  return (
+    <Layout title="Blog">
+      {posts.map((p) => (
+        <Post key={p.title} post={p} />
+      ))}
+    </Layout>
+  );
 }
+
+Blog.getInitialProps = async (ctx) => {
+  const posts = require("../../data/blogPost.json");
+  return {
+    posts: posts.map((post) => ({
+      title: post.title,
+      slug: post.slug,
+      description: post.description,
+      publishDate: post.publishDate,
+    })),
+  };
+};

@@ -1,25 +1,10 @@
-import { styled } from "linaria/react";
+import React from "react";
+import styles from "./Card.module.css";
 
-export default styled.article`
-  position: relative;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
-  border-radius: 0.25rem;
+export default function Card({ children }) {
+  return <article className={styles.container}>{children}</article>;
+}
 
-  margin-bottom: 1.5rem;
-`;
-
-export const CardItem = styled.div`
-  padding: 1.25rem;
-
-  & + & {
-    padding-top: 0;
-  }
-
-  > *:last-child {
-      margin-bottom: 0;
-  }
-`;
+export function CardItem({ children }) {
+  return <div className={styles.item}>{children}</div>;
+}
