@@ -9,8 +9,9 @@ import Twitter from "../../public/assets/twitter.svg";
 import Linkedin from "../../public/assets/linkedin.svg";
 
 import styles from "./Layout.module.css";
+import Img from "gatsby-image";
 
-export default ({ title, children }) => {
+export default ({ title, children, me }) => {
   return (
     <>
       <Head>
@@ -24,8 +25,13 @@ export default ({ title, children }) => {
         <meta name="author" content="Stéphane Goetz" />
       </Head>
       <aside className={styles.aside}>
-        <h1>Onigoetz.ch</h1>
-        <p>Some Stuff, sometimes</p>
+        <Img
+          className={styles.picture}
+          alt="Picture of Stéphane Goetz"
+          fluid={me.image}
+        />
+        <strong className={styles.title}>Stéphane Goetz</strong>
+        <p className={styles.bio}>{me.shortBio}</p>
 
         <div className={styles.container}>
           <ul>

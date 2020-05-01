@@ -48,7 +48,7 @@ export default function Project({ project }) {
         )}
       </CardItem>
       <CardItem>
-        {project.description}
+        <div dangerouslySetInnerHTML={{ __html: project.description }} />
         {project.documentation && (
           <>
             <br />

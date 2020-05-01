@@ -7,11 +7,12 @@ import Card, { CardItem } from "../../components/Card";
 import Date from "../../components/Date";
 
 import styles from "./[slug].module.css";
+import {getPerson} from "../../helpers/utils";
 
 
-export default function BlogPost({ post }) {
+export default function BlogPost({ post, me }) {
   return (
-    <Layout title={post.title}>
+    <Layout title={post.title} me={me}>
       {post.heroImage && (
         <div className={styles.hero}>
           <Img
@@ -54,5 +55,5 @@ BlogPost.getInitialProps = async (ctx) => {
 
   post.body = marked(post.body);
 
-  return { post };
+  return { post, me: getPerson() };
 };

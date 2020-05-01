@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Post from "../components/Post";
+import { getPerson } from "../helpers/utils";
 
-export default function Blog({ posts }) {
+export default function Blog({ posts, me }) {
   return (
-    <Layout title="Blog">
+    <Layout title="Blog" me={me}>
       {posts.map((p) => (
         <Post key={p.title} post={p} />
       ))}
@@ -21,5 +22,6 @@ Blog.getInitialProps = async (ctx) => {
       description: post.description,
       publishDate: post.publishDate,
     })),
+    me: getPerson(),
   };
 };

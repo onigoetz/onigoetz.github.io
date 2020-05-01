@@ -20,7 +20,7 @@
     background: #fff;
     box-shadow: 0 0.5px 0 0 #ffffff inset, 0 1px 2px 0 #b3b3b3;
     padding: 1rem 1rem 0 1rem;
-    margin: 0 -10px;
+    margin: 0 -1rem;
 }
 
 .aside a {
@@ -67,6 +67,29 @@
         margin-bottom: 0.5em;
         display: block;
     }
+}
+
+.picture {
+    border-radius: .5rem;
+    box-shadow: 0 1px 2px 0 #b3b3b3;
+}
+
+@media (max-width: 719px) {
+    .picture {
+        width: 65px;
+        float: left;
+        margin-right: .5rem;
+        margin-top: .2rem;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.bio {
+    color: #666;
 }
 
 .copyright {
