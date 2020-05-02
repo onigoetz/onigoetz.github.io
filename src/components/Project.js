@@ -50,12 +50,9 @@ export default function Project({ project }) {
       <CardItem>
         <div dangerouslySetInnerHTML={{ __html: project.description }} />
         {project.documentation && (
-          <>
-            <br />
-            <a href={project.documentation} target="_blank" rel="noopener">
-              Documentation
-            </a>
-          </>
+          <a href={project.documentation} target="_blank" rel="noopener">
+            Documentation
+          </a>
         )}
       </CardItem>
     </Card>

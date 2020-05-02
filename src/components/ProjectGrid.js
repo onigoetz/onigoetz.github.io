@@ -31,7 +31,23 @@ export default function ProjectGrid({ projects }) {
 
   const visibleProjects = projects
     .filter((project) => visibleStatus[project.status])
-    .sort((a, b) => order[a.status] - order[b.status] || a.name - b.name);
+    .sort((a, b) => {
+      if (order[a.status] < order[b.status]) {
+        return -1;
+      }
+      if (order[a.status] > order[b.status]) {
+        return 1;
+      }
+
+      if (a.title < b.title) {
+        return -1;
+      }
+      if (a.title > b.title) {
+        return 1;
+      }
+
+      return 0;
+    });
 
   return (
     <>

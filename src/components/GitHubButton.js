@@ -32,10 +32,11 @@ export default function GitHubButton({ namespace, repo, type }) {
 
       // Cache the fetching promise
       cacheForever[url] = fetch(url)
-        .then((response) => res.json())
-        .catch(() => {
+        .then((response) => response.json())
+        .catch((error) => {
           // Delete from cache if fetching failed
           delete cacheForever[url];
+          console.error(error);
         });
 
       // Return the fetcher

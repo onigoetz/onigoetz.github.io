@@ -29,6 +29,7 @@ export default ({ title, children, me }) => {
           className={styles.picture}
           alt="Picture of Stéphane Goetz"
           fluid={me.image}
+          style={{ maxWidth: 300 }}
         />
         <strong className={styles.title}>Stéphane Goetz</strong>
         <p className={styles.bio}>{me.shortBio}</p>
@@ -55,25 +56,25 @@ export default ({ title, children, me }) => {
               target="_blank"
               rel="noopener"
             >
-              <GitHub style={{ fill: "#181717" }} />
+              <GitHub style={{ fill: "#181717", maxWidth: 50 }} />
             </a>
             <a
-              href="http://twitter.com/onigoetz"
+              href="https://twitter.com/onigoetz"
               className="twitter"
               title="Twitter Profile"
               target="_blank"
               rel="noopener"
             >
-              <Twitter style={{ fill: "#1DA1F2" }} />
+              <Twitter style={{ fill: "#1DA1F2", maxWidth: 50 }} />
             </a>
             <a
-              href="http://ch.linkedin.com/in/stephanegoetz"
+              href="https://ch.linkedin.com/in/stephanegoetz"
               className="linkedin"
               title="LinkedIn profile"
               target="_blank"
               rel="noopener"
             >
-              <Linkedin style={{ fill: "#0077B5" }} />
+              <Linkedin style={{ fill: "#0077B5", maxWidth: 50 }} />
             </a>
           </div>
         </div>
