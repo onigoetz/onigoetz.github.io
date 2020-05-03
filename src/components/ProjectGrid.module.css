@@ -1,87 +1,87 @@
 .container {
-    margin: 2rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2rem;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
 }
 
 .container > article {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .count {
-    float: right;
+  float: right;
 }
 
 .status {
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 .status span {
-    line-height: 20px;
+  line-height: 20px;
 }
 
 .status input {
-    position: absolute; /* take it out of document flow */
-    opacity: 0; /* hide it */
+  position: absolute; /* take it out of document flow */
+  opacity: 0; /* hide it */
 }
 
 .status input + span {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
 }
 
 /* Box.*/
 .status input + span:before {
-    content: '';
-    margin-right: 10px;
-    margin-top: -4px;
-    display: inline-block;
-    vertical-align: text-top;
-    width: 20px;
-    height: 20px;
-    background: white;
-    outline: 1px solid #03A9F4;
+  content: "";
+  margin-right: 10px;
+  margin-top: -4px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  outline: 1px solid #03a9f4;
 }
 
 /* Box hover */
 .status input:hover + span:before {
-    background: #03A9F4;
+  background: #03a9f4;
 }
 
 /* Box focus */
 .status input:focus + span:before {
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
 /* Box checked */
 .status input:checked + span:before {
-    background: #03A9F4;
+  background: #03a9f4;
 }
 
 /* Disabled state label. */
 .status input:disabled + span {
-    color: #b8b8b8;
-    cursor: auto;
+  color: #b8b8b8;
+  cursor: auto;
 }
 
 /* Disabled box. */
 .status input:disabled + span:before {
-    box-shadow: none;
-    background: #ddd;
+  box-shadow: none;
+  background: #ddd;
 }
 
 /* Checkmark. Could be replaced with an image */
 .status input:checked + span:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 8px;
-    top: 0;
-    width: 6px;
-    height: 10px;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
-    transform: rotate(45deg);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 0;
+  width: 6px;
+  height: 10px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(45deg);
 }

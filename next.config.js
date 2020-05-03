@@ -3,7 +3,6 @@ module.exports = {
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
   ) {
-
     // Can't generate the RSS feed through this method
     delete defaultPathMap["/rss.xml"];
 

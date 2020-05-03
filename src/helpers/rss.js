@@ -1,13 +1,13 @@
 const blogPostsRssXml = (blogPosts) => {
-    const marked = require("marked");
-    let latestPostDate = "";
-    let rssItemsXml = "";
-    blogPosts.forEach((post) => {
-        const postDate = Date.parse(post.publishDate);
-        if (!latestPostDate || postDate > Date.parse(latestPostDate)) {
-            latestPostDate = post.publishDate;
-        }
-        rssItemsXml += `
+  const marked = require("marked");
+  let latestPostDate = "";
+  let rssItemsXml = "";
+  blogPosts.forEach((post) => {
+    const postDate = Date.parse(post.publishDate);
+    if (!latestPostDate || postDate > Date.parse(latestPostDate)) {
+      latestPostDate = post.publishDate;
+    }
+    rssItemsXml += `
       <item>
         <title>${post.title}</title>
         <link>https://onigoetz.ch/blog/${post.slug}</link>
@@ -16,22 +16,22 @@ const blogPostsRssXml = (blogPosts) => {
         <![CDATA[${marked(post.body)}]]>
         </description>
     </item>`;
-    });
-    return {
-        rssItemsXml,
-        latestPostDate,
-    };
+  });
+  return {
+    rssItemsXml,
+    latestPostDate,
+  };
 };
 
 module.exports = function getRssXml() {
-    const blogPosts = require("../../data/blogPost.json");
+  const blogPosts = require("../../data/blogPost.json");
 
-    blogPosts.sort(
-        (a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate)
-    );
+  blogPosts.sort(
+    (a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate)
+  );
 
-    const { rssItemsXml, latestPostDate } = blogPostsRssXml(blogPosts);
-    return `<?xml version="1.0" ?>
+  const { rssItemsXml, latestPostDate } = blogPostsRssXml(blogPosts);
+  return `<?xml version="1.0" ?>
   <rss version="2.0">
     <channel>
         <title>Blog by Stéphane Goetz</title>

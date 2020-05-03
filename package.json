@@ -20,7 +20,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export && node src/helpers/generate_rss.js",
-    "prettier": "prettier --write src/**/*.js *.js",
+    "prettier": "prettier --write *.js src/**/*.js src/**/**/*.js css/*.css src/**/*.css src/**/**/*.css",
     "postinstall": "npm run getcontent",
     "getcontent": "node src/helpers/getcontent.js install"
   }

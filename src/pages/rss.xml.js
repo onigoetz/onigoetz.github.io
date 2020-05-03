@@ -7,7 +7,7 @@ Rss.getInitialProps = async function ({ res }) {
     return {};
   }
 
-  const getRssXml = require("../helpers/rss.js")
+  const getRssXml = require("../helpers/rss.js");
 
   res.setHeader("Content-Type", "text/xml");
   res.write(getRssXml());

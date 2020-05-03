@@ -2,48 +2,48 @@
  * Project icons
  */
 .technology {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    transform: translateY(.1em);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  transform: translateY(0.1em);
 
-    margin: 1px 0 0 .5em;
+  margin: 1px 0 0 0.5em;
 }
 
 .technology-laravel {
-    background-image: url(./assets/technologies/laravel.svg);
+  background-image: url(./assets/technologies/laravel.svg);
 }
 
 .technology-jquery {
-    background-image: url(./assets/technologies/jquery.png);
+  background-image: url(./assets/technologies/jquery.png);
 }
 
 .technology-slim {
-    background-image: url(./assets/technologies/slim.png);
+  background-image: url(./assets/technologies/slim.png);
 }
 
 .technology-php {
-    background-image: url(./assets/technologies/php.svg);
+  background-image: url(./assets/technologies/php.svg);
 }
 
 .technology-python {
-    background-image: url(./assets/technologies/python.svg);
+  background-image: url(./assets/technologies/python.svg);
 }
 
 .technology-javascript {
-    background-image: url(./assets/technologies/javascript.svg);
+  background-image: url(./assets/technologies/javascript.svg);
 }
 
 .technology-java {
-    background-image: url(./assets/technologies/java.gif);
+  background-image: url(./assets/technologies/java.gif);
 }
 
 .technology-wordpress {
-    background-image: url(./assets/technologies/wordpress.svg);
+  background-image: url(./assets/technologies/wordpress.svg);
 }
 
 .technology-react {
-    background-image: url(./assets/technologies/react.svg);
+  background-image: url(./assets/technologies/react.svg);
 }
