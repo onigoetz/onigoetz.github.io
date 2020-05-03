@@ -23,6 +23,12 @@ export default ({ title, children, me }) => {
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Stéphane Goetz" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="RSS for blog posts"
+          href="https://www.onigoetz.ch/rss.xml"
+        />
       </Head>
       <aside className={styles.aside}>
         <Img
