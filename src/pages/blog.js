@@ -14,14 +14,23 @@ export default function Blog({ posts, me }) {
 }
 
 Blog.getInitialProps = async (ctx) => {
-  const posts = require("../../data/blogPost.json");
-  return {
-    posts: posts.map((post) => ({
+  const formatter = new Intl.DateTimeFormat("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  const posts = require("../../data/blogPost.json")
+    .sort((a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate))
+    .map((post) => ({
       title: post.title,
       slug: post.slug,
       description: post.description,
-      publishDate: post.publishDate,
-    })),
+      publishDate: formatter.format(Date.parse(post.publishDate)),
+    }));
+
+  return {
+    posts,
     me: getPerson(),
   };
 };
