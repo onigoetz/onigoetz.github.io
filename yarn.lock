@@ -2936,10 +2936,10 @@ function-bind@^1.1.1:
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
 
-gatsby-image@2.4.13:
-  version "2.4.13"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.4.13.tgz#21ea2d062952406aba3d34c0bc45752df6b8a554"
-  integrity sha512-j9FIH+EUY6oWQdcNr5Xb87VGsdT/dztqB0wKkMqboIIqPoK/Zdzvd2cUbLIYVOI9zOSsFNDoVsHqe/M0bfu4HA==
+gatsby-image@2.4.16:
+  version "2.4.16"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.4.16.tgz#65ce1642bb6a0c8d87c74b204ed79995cd43da16"
+  integrity sha512-N5kJ3LE8re57DgR1lAZFWP2or0nCSuNXSUKvSBvVgxwcebdcFGCxN/xTJbU4ojFfFBJ/D4gKuxJrvLvDf3jcyg==
   dependencies:
     "@babel/runtime" "^7.10.3"
     object-fit-images "^3.2.4"
