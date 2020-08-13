@@ -1,5 +1,16 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "group:allNonMajor"
+  ],
+  "schedule": "before 11pm on Monday",
+  "packageRules": [
+    {
+      "groupName": "@types",
+      "packagePatterns": [
+        "@types/*"
+      ],
+      "rangeStrategy": "update-lockfile"
+    }
   ]
 }
