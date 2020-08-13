@@ -1,9 +1,10 @@
 {
   "extends": [
     "config:base",
-    "group:allNonMajor"
+    "group:allNonMajor",
+    ":preserveSemverRanges",
+    "schedule:weekends"
   ],
-  "schedule": "before 11pm on Monday",
   "packageRules": [
     {
       "groupName": "@types",
