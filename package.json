@@ -5,15 +5,15 @@
     "contentful": "8.2.0",
     "dotenv": "8.2.0",
     "fs-extra": "9.1.0",
-    "gatsby-image": "3.0.0",
+    "gatsby-image": "3.1.0",
     "isomorphic-unfetch": "3.1.0",
     "marked": "2.0.1",
-    "next": "10.0.8",
+    "next": "10.1.1",
     "normalize.css": "8.0.1",
     "prettier": "2.2.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "swr": "0.5.3"
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swr": "0.5.4"
   },
   "scripts": {
     "dev": "next",
