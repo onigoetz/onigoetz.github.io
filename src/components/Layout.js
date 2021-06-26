@@ -11,7 +11,7 @@ import Linkedin from "../../public/assets/linkedin.svg";
 import styles from "./Layout.module.css";
 import Img from "gatsby-image";
 
-export default ({ title, children, me }) => {
+export default function Layout({ title, children, me }) {
   return (
     <>
       <Head>
