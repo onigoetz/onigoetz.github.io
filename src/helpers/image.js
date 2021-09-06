@@ -14,7 +14,6 @@ const crypto = require(`crypto`);
 
 const qs = require(`qs`);
 const base64Img = require(`base64-img`);
-const _ = require(`lodash`);
 
 const cacheImage = require(`./cache-image`);
 
@@ -29,11 +28,15 @@ const CACHE_IMG_FOLDER = path.join(REMOTE_CACHE_FOLDER, `images`);
 // @see https://www.contentful.com/developers/docs/references/images-api/#/reference/resizing-&-cropping/specify-width-&-height
 const CONTENTFUL_IMAGE_MAX_SIZE = 4000;
 
-const isImage = (image) =>
-  _.includes(
-    [`image/jpeg`, `image/jpg`, `image/png`, `image/webp`, `image/gif`],
-    _.get(image, `file.contentType`)
-  );
+const imageTypes = new Set([
+  `image/jpeg`,
+  `image/jpg`,
+  `image/png`,
+  `image/webp`,
+  `image/gif`,
+]);
+
+const isImage = (image) => imageTypes.has(image.file.contentType);
 
 function getBase64Image(url) {
   if (!url) return null;
@@ -80,8 +83,8 @@ function getBasicImageProps(image, args) {
 
 function createUrl(imgUrl, options = {}) {
   // Convert to Contentful names and filter out undefined/null values.
-  const args = _.pickBy(
-    {
+  const args = Object.fromEntries(
+    Object.entries({
       w: options.width,
       h: options.height,
       fl: options.jpegProgressive ? `progressive` : null,
@@ -90,17 +93,14 @@ function createUrl(imgUrl, options = {}) {
       fit: options.resizingBehavior || ``,
       f: options.cropFocus || ``,
       bg: options.background || ``,
-    },
-    _.identity
+    }).filter((tuple) => !!tuple[1])
   );
+
   return `${imgUrl}?${qs.stringify(args)}`;
 }
 
 function getWebpVariant({ image, options }) {
-  if (
-    _.get(image, `file.contentType`) === `image/webp` ||
-    options.toFormat === `webp`
-  ) {
+  if (image.file.contentType === `image/webp` || options.toFormat === `webp`) {
     return null;
   }
 
@@ -123,31 +123,6 @@ function getOptions(options) {
     ...options,
   };
 }
-
-const getTracedSVG = async ({ image, options, absolutePath }) => {
-  const { traceSVG } = require(`gatsby-plugin-sharp`);
-
-  const {
-    file: { contentType },
-  } = image;
-
-  if (contentType.indexOf(`image/`) !== 0) {
-    return null;
-  }
-
-  const extension = path.extname(absolutePath);
-
-  return traceSVG({
-    file: {
-      internal: image.internal,
-      name: image.file.fileName,
-      extension,
-      absolutePath,
-    },
-    args: { toFormat: `` },
-    fileArgs: options,
-  });
-};
 
 function resolveFluid(image, options) {
   if (!isImage(image)) return null;
@@ -212,7 +187,7 @@ function resolveFluid(image, options) {
   }
 
   // Sort sizes for prettiness.
-  const sortedSizes = _.sortBy(filteredSizes);
+  const sortedSizes = filteredSizes.sort();
 
   // Create the srcSet.
   const srcSet = sortedSizes
@@ -252,7 +227,6 @@ module.exports = async function getImage(image, rawOptions) {
     ...resolveFluid(image, options),
     srcWebp: webp.src,
     srcSetWebp: webp.srcSet,
-    base64: await getBase64Image(image.file.url, absolutePath),
-    //tracedSVG: await getTracedSVG({image, options, absolutePath}),
+    base64: await getBase64Image(image.file.url, absolutePath)
   };
 };
