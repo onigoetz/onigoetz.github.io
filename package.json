@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@svgr/webpack": "5.5.0",
+    "@svgr/webpack": "6.0.0",
     "base64-img": "1.0.4",
     "contentful": "9.1.4",
     "dotenv": "10.0.0",
