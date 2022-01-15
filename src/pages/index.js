@@ -15,7 +15,7 @@ export default function Projects({ projects, me }) {
 Projects.getInitialProps = async (ctx) => {
   const projects = require("../../data/projects.json");
 
-  const marked = require("marked");
+  const { marked } = require("marked");
   projects.forEach((item) => {
     if (item.badges) {
       item.badges = marked(item.badges);

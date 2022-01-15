@@ -1,5 +1,5 @@
 const blogPostsRssXml = (blogPosts) => {
-  const marked = require("marked");
+  const { marked } = require("marked");
   let latestPostDate = "";
   let rssItemsXml = "";
   blogPosts.forEach((post) => {

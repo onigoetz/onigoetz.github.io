@@ -63,7 +63,7 @@ export default function BlogPost({ post, me }) {
 }
 
 BlogPost.getInitialProps = async (ctx) => {
-  const marked = require("marked");
+  const { marked } = require("marked");
   const formatter = new Intl.DateTimeFormat("en-GB", {
     year: "numeric",
     month: "long",
