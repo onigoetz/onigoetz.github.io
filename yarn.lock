@@ -1836,12 +1836,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.24.0":
-  version: 0.24.0
-  resolution: "axios@npm:0.24.0"
+"axios@npm:^0.26.0":
+  version: 0.26.0
+  resolution: "axios@npm:0.26.0"
   dependencies:
-    follow-redirects: ^1.14.4
-  checksum: 468cf496c08a6aadfb7e699bebdac02851e3043d4e7d282350804ea8900e30d368daa6e3cd4ab83b8ddb5a3b1e17a5a21ada13fc9cebd27b74828f47a4236316
+    follow-redirects: ^1.14.8
+  checksum: d7a8b898f4157bedeb2e06c03b16133b91b354c041205bea732ce58b7a21f373d22057b0eea0d482838145ce6ff482b359750d9bcb8dd19d45e3928e3c65c280
   languageName: node
   linkType: hard
 
@@ -2032,29 +2032,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful-sdk-core@npm:^6.10.4":
-  version: 6.10.4
-  resolution: "contentful-sdk-core@npm:6.10.4"
+"contentful-sdk-core@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "contentful-sdk-core@npm:7.0.1"
   dependencies:
     fast-copy: ^2.1.0
     lodash.isplainobject: ^4.0.6
     lodash.isstring: ^4.0.1
     p-throttle: ^4.1.1
     qs: ^6.9.4
-  checksum: 62778b5c8458bf90c76709f390696b61d50702aeffbe04c113e665b76b7cc9aaf867ba0299ad773395fe17685bd2f9c407d2f90badca83857feb00564f85d1bc
+  checksum: f2af67a4b54291989d0dc663d3861b167578ca539d090b60a9225f9c8c81041fbfe727c72d4e0b26f0b6d2cfd9d2e2a77229a222e23bf8ff61f2892e3c02c257
   languageName: node
   linkType: hard
 
-"contentful@npm:9.1.6":
-  version: 9.1.6
-  resolution: "contentful@npm:9.1.6"
+"contentful@npm:9.1.10":
+  version: 9.1.10
+  resolution: "contentful@npm:9.1.10"
   dependencies:
-    axios: ^0.24.0
+    axios: ^0.26.0
     contentful-resolve-response: ^1.3.0
-    contentful-sdk-core: ^6.10.4
+    contentful-sdk-core: ^7.0.1
     fast-copy: ^2.1.0
     json-stringify-safe: ^5.0.1
-  checksum: 113e1c1bfc29bc03958d68581c4e98e74e0e4dfda0e67efc5c684785371b1389e273bb3d76f2cc70f2e06c5482730793c058437e36d6f7ad7883dfe62b119381
+  checksum: c7ae7dfbc72f5b49ca64e509a00cbe79a57a91aff1ccff082a8c365497014f756ae4852f01a3ab14b3a3b00e8458fe3a72a87d702a5e08bc548b23f5197f4852
   languageName: node
   linkType: hard
 
@@ -2286,13 +2286,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.4":
-  version: 1.14.4
-  resolution: "follow-redirects@npm:1.14.4"
+"follow-redirects@npm:^1.14.8":
+  version: 1.14.8
+  resolution: "follow-redirects@npm:1.14.8"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: d4ce74cf5c6f363168b97e706b914eb9ffb6bf4d4c6d8f8330b93088d9b90e566611ddbcf0e42c8ed5fd17598dfeda1d19230d3e9d6d6c6b4d1c10ec3a0b99be
+  checksum: 40c67899c2e3149a27e8b6498a338ff27f39fe138fde8d7f0756cb44b073ba0bfec3d52af28f20c5bdd67263d564d0d8d7b5efefd431de95c18c42f7b4aef457
   languageName: node
   linkType: hard
 
@@ -2912,7 +2912,7 @@ __metadata:
   dependencies:
     "@svgr/webpack": 6.2.1
     base64-img: 1.0.4
-    contentful: 9.1.6
+    contentful: 9.1.10
     dotenv: 16.0.0
     fs-extra: 10.0.0
     gatsby-image: 3.11.0
