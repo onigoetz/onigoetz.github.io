@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.14.5":
@@ -2045,16 +2045,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:9.1.10":
-  version: 9.1.10
-  resolution: "contentful@npm:9.1.10"
+"contentful@npm:9.1.12":
+  version: 9.1.12
+  resolution: "contentful@npm:9.1.12"
   dependencies:
     axios: ^0.26.0
     contentful-resolve-response: ^1.3.0
     contentful-sdk-core: ^7.0.1
     fast-copy: ^2.1.0
     json-stringify-safe: ^5.0.1
-  checksum: c7ae7dfbc72f5b49ca64e509a00cbe79a57a91aff1ccff082a8c365497014f756ae4852f01a3ab14b3a3b00e8458fe3a72a87d702a5e08bc548b23f5197f4852
+  checksum: 18ed426edc538101aebf0f03d5aea25e80b5775d58b970b07a93f3f967c87f0586f7dc8e2a78e266c57db409e837308a6ef63b6c4f787f8a0d5a134d7185b632
   languageName: node
   linkType: hard
 
@@ -2296,14 +2296,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:10.0.0":
-  version: 10.0.0
-  resolution: "fs-extra@npm:10.0.0"
+"fs-extra@npm:10.0.1":
+  version: 10.0.1
+  resolution: "fs-extra@npm:10.0.1"
   dependencies:
     graceful-fs: ^4.2.0
     jsonfile: ^6.0.1
     universalify: ^2.0.0
-  checksum: 5285a3d8f34b917cf2b66af8c231a40c1623626e9d701a20051d3337be16c6d7cac94441c8b3732d47a92a2a027886ca93c69b6a4ae6aee3c89650d2a8880c0a
+  checksum: c1faaa5eb9e1c5c7c7ff09f966e93922ecb068ae1b04801cfc983ef05fcc1f66bfbb8d8d0b745c910014c7a2e7317fb6cf3bfe7390450c1157e3cc1a218f221d
   languageName: node
   linkType: hard
 
@@ -2912,9 +2912,9 @@ __metadata:
   dependencies:
     "@svgr/webpack": 6.2.1
     base64-img: 1.0.4
-    contentful: 9.1.10
+    contentful: 9.1.12
     dotenv: 16.0.0
-    fs-extra: 10.0.0
+    fs-extra: 10.0.1
     gatsby-image: 3.11.0
     isomorphic-unfetch: 3.1.0
     marked: 4.0.12
