@@ -2045,16 +2045,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:9.1.13":
-  version: 9.1.13
-  resolution: "contentful@npm:9.1.13"
+"contentful@npm:9.1.18":
+  version: 9.1.18
+  resolution: "contentful@npm:9.1.18"
   dependencies:
     axios: ^0.26.0
     contentful-resolve-response: ^1.3.0
     contentful-sdk-core: ^7.0.1
     fast-copy: ^2.1.0
     json-stringify-safe: ^5.0.1
-  checksum: 2e1e2a8f65b7176887fa165d7a62f9d5423debfc7334eaf4b384bb046ba3408495878cef199e32b7cb2f1ac92e03cb69a248eca7e81c36a01852a6b521528b7f
+  checksum: 65bf2e87155806b925786f8625ed90c2f8b5bf20754ebb25d5abd8f9c8a8557ed3a3280d357b361ccf4ff64d5dcf46eb1d466d177fe8bc08d3f81bc3cad67c14
   languageName: node
   linkType: hard
 
@@ -2756,12 +2756,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.5.1":
-  version: 2.5.1
-  resolution: "prettier@npm:2.5.1"
+"prettier@npm:2.6.0":
+  version: 2.6.0
+  resolution: "prettier@npm:2.6.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 21b9408476ea1c544b0e45d51ceb94a84789ff92095abb710942d780c862d0daebdb29972d47f6b4d0f7ebbfb0ffbf56cc2cfa3e3e9d1cca54864af185b15b66
+  checksum: 3e527ad62279676778a8404d18174d7ca2365ada4caba6eebbcdd9907d1187afd3bc6ade5b4e5f5d4549bb9fb71e45ca8930d71500017635524f8fc05bc52e93
   languageName: node
   linkType: hard
 
@@ -2912,7 +2912,7 @@ __metadata:
   dependencies:
     "@svgr/webpack": 6.2.1
     base64-img: 1.0.4
-    contentful: 9.1.13
+    contentful: 9.1.18
     dotenv: 16.0.0
     fs-extra: 10.0.1
     gatsby-image: 3.11.0
@@ -2920,7 +2920,7 @@ __metadata:
     marked: 4.0.12
     next: 12.1.0
     normalize.css: 8.0.1
-    prettier: 2.5.1
+    prettier: 2.6.0
     react: 17.0.2
     react-dom: 17.0.2
     swr: 1.2.2
