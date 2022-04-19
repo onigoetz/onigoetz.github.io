@@ -4,7 +4,7 @@
     "base64-img": "1.0.4",
     "contentful": "9.1.22",
     "dotenv": "16.0.0",
-    "fs-extra": "10.0.1",
+    "fs-extra": "10.1.0",
     "gatsby-image": "3.11.0",
     "isomorphic-unfetch": "3.1.0",
     "marked": "4.0.14",
