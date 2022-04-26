@@ -2,7 +2,7 @@
   "dependencies": {
     "@svgr/webpack": "6.2.1",
     "base64-img": "1.0.4",
-    "contentful": "9.1.22",
+    "contentful": "9.1.25",
     "dotenv": "16.0.0",
     "fs-extra": "10.1.0",
     "gatsby-image": "3.11.0",
