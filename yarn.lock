@@ -2337,10 +2337,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:16.0.2":
-  version: 16.0.2
-  resolution: "dotenv@npm:16.0.2"
-  checksum: ca8f9ca2d67929c7771069f4c31b4e46b9932621009e658e5afd655dde2d69b77642bf36dbc9e72bc170523dfd908a9ee41c26f034c1fdc605ace3b1b4b10faf
+"dotenv@npm:16.0.3":
+  version: 16.0.3
+  resolution: "dotenv@npm:16.0.3"
+  checksum: afcf03f373d7a6d62c7e9afea6328e62851d627a4e73f2e12d0a8deae1cd375892004f3021883f8aec85932cd2834b091f568ced92b4774625b321db83b827f8
   languageName: node
   linkType: hard
 
@@ -2669,12 +2669,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:4.1.0":
-  version: 4.1.0
-  resolution: "marked@npm:4.1.0"
+"marked@npm:4.1.1":
+  version: 4.1.1
+  resolution: "marked@npm:4.1.1"
   bin:
     marked: bin/marked.js
-  checksum: f0b3732a9d6208c933541342e60eb78029bd046c143a6ade0e76ed80b6174f92b186205a9dfe805e435070806ec475b0e87e62d04348eafd2f761c24281b192a
+  checksum: 717e3357952ee53de831bf0eb110ed075bebca2376c58bcdf7ee523ef540d45308ad6d51b2c933da0968832ea4386f31c142ca65443e77c098e84f6cce73e418
   languageName: node
   linkType: hard
 
@@ -3119,11 +3119,11 @@ __metadata:
     "@svgr/webpack": 6.3.1
     base64-img: 1.0.4
     contentful: 9.2.5
-    dotenv: 16.0.2
+    dotenv: 16.0.3
     fs-extra: 10.1.0
     gatsby-image: 3.11.0
     isomorphic-unfetch: 3.1.0
-    marked: 4.1.0
+    marked: 4.1.1
     next: 12.3.1
     normalize.css: 8.0.1
     prettier: 2.7.1
