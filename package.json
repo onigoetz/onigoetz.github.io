@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@svgr/webpack": "6.4.0",
+    "@svgr/webpack": "6.5.0",
     "base64-img": "1.0.4",
     "contentful": "9.2.5",
     "dotenv": "16.0.3",
@@ -24,5 +24,5 @@
     "postinstall": "npm run getcontent",
     "getcontent": "node src/helpers/getcontent.js install"
   },
-  "packageManager": "yarn@3.2.3"
+  "packageManager": "yarn@3.2.4"
 }
