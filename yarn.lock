@@ -2205,16 +2205,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:9.2.14":
-  version: 9.2.14
-  resolution: "contentful@npm:9.2.14"
+"contentful@npm:9.2.15":
+  version: 9.2.15
+  resolution: "contentful@npm:9.2.15"
   dependencies:
     axios: ^0.27.0
     contentful-resolve-response: ^1.3.12
     contentful-sdk-core: ^7.0.4
     fast-copy: ^2.1.7
     json-stringify-safe: ^5.0.1
-  checksum: 64bce71621a4397b49078badeeaae207eb46b7d53aab174cca16b633582387049923aac79e7e7909cfd4815317f2f4c72d4c06ecc3e5e66752e0b5aa69d5d23f
+  checksum: 6e0b629687a214d741048d8754c5ef12b1bac89c5bf0ec6ddbc6e9d9a81eead25eaae202acd9ec06ae056cff30ef7015463ee819809d477b3ab3ed57fb5d8414
   languageName: node
   linkType: hard
 
@@ -2609,13 +2609,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isomorphic-unfetch@npm:4.0.1":
-  version: 4.0.1
-  resolution: "isomorphic-unfetch@npm:4.0.1"
+"isomorphic-unfetch@npm:4.0.2":
+  version: 4.0.2
+  resolution: "isomorphic-unfetch@npm:4.0.2"
   dependencies:
     node-fetch: ^3.2.0
     unfetch: ^5.0.0
-  checksum: ff6280eea98e6c80ba68798d961dd97956eaa2e9c92ce7d3f274637fc09726a6e60e891c4826ded5e1b70f49ebc8ffd85691f40bf4e59c0f7cc1c9c811a0c87d
+  checksum: a5c22569f18a897c333aa2d7c0042214e1d26fc502b7b7dd451aca81f34a56557cb48faf63a3ad5c6534d610c043ef36b9e999211a2c0665eabdca9e9c86e398
   languageName: node
   linkType: hard
 
@@ -2976,12 +2976,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.8.1":
-  version: 2.8.1
-  resolution: "prettier@npm:2.8.1"
+"prettier@npm:2.8.2":
+  version: 2.8.2
+  resolution: "prettier@npm:2.8.2"
   bin:
     prettier: bin-prettier.js
-  checksum: 4f21a0f1269f76fb36f54e9a8a1ea4c11e27478958bf860661fb4b6d7ac69aac1581f8724fa98ea3585e56d42a2ea317a17ff6e3324f40cb11ff9e20b73785cc
+  checksum: 740c56c2128d587d656ea1dde9bc9c3503dfc94db4f3ac387259215eeb2e216680bdad9d18a0c9feecc6b42cfa188d6fa777df4c36c1d00cedd4199074fbfbd2
   languageName: node
   linkType: hard
 
@@ -3171,15 +3171,15 @@ __metadata:
   dependencies:
     "@svgr/webpack": 6.5.1
     base64-img: 1.0.4
-    contentful: 9.2.14
+    contentful: 9.2.15
     dotenv: 16.0.3
     fs-extra: 10.1.0
     gatsby-image: 3.11.0
-    isomorphic-unfetch: 4.0.1
+    isomorphic-unfetch: 4.0.2
     marked: 4.2.5
     next: 13.1.1
     normalize.css: 8.0.1
-    prettier: 2.8.1
+    prettier: 2.8.2
     react: 18.2.0
     react-dom: 18.2.0
     swr: 2.0.0
