@@ -2,18 +2,18 @@
   "dependencies": {
     "@svgr/webpack": "6.5.1",
     "base64-img": "1.0.4",
-    "contentful": "9.2.15",
+    "contentful": "9.2.19",
     "dotenv": "16.0.3",
     "fs-extra": "10.1.0",
     "gatsby-image": "3.11.0",
     "isomorphic-unfetch": "4.0.2",
     "marked": "4.2.12",
-    "next": "13.1.2",
+    "next": "13.1.5",
     "normalize.css": "8.0.1",
     "prettier": "2.8.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swr": "2.0.0"
+    "swr": "2.0.1"
   },
   "scripts": {
     "dev": "next",
