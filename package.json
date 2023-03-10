@@ -8,12 +8,12 @@
     "gatsby-image": "3.11.0",
     "isomorphic-unfetch": "4.0.2",
     "marked": "4.2.12",
-    "next": "13.1.6",
+    "next": "13.2.4",
     "normalize.css": "8.0.1",
     "prettier": "2.8.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swr": "2.0.3"
+    "swr": "2.1.0"
   },
   "scripts": {
     "dev": "next",
