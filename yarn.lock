@@ -2212,9 +2212,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:9.3.3":
-  version: 9.3.3
-  resolution: "contentful@npm:9.3.3"
+"contentful@npm:9.3.5":
+  version: 9.3.5
+  resolution: "contentful@npm:9.3.5"
   dependencies:
     "@contentful/rich-text-types": ^16.0.2
     axios: ^0.27.0
@@ -2222,7 +2222,7 @@ __metadata:
     contentful-sdk-core: ^7.0.5
     fast-copy: ^2.1.7
     json-stringify-safe: ^5.0.1
-  checksum: e7a08e28c76224ac02638cd05364fc8b48628f10f6aad94b32f7dee8220e758aeb3f25fb384be37c9bf47cf937f7331fca18b83fed84986d9e8400e755108c38
+  checksum: 85783f497e1091190aea4a631523a08e884f43ce6e88af42e895762ee77d6b7193206a9da023b2a2d4ed18ae57c142d7c2da837897a02f0bc1b4b9c374535504
   languageName: node
   linkType: hard
 
@@ -3182,7 +3182,7 @@ __metadata:
   dependencies:
     "@svgr/webpack": 6.5.1
     base64-img: 1.0.4
-    contentful: 9.3.3
+    contentful: 9.3.5
     dotenv: 16.0.3
     fs-extra: 11.1.0
     gatsby-image: 3.11.0
