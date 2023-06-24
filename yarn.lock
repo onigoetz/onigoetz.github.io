@@ -2176,9 +2176,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:10.2.4":
-  version: 10.2.4
-  resolution: "contentful@npm:10.2.4"
+"contentful@npm:10.3.0":
+  version: 10.3.0
+  resolution: "contentful@npm:10.3.0"
   dependencies:
     "@contentful/rich-text-types": ^16.0.2
     axios: ^0.26.1
@@ -2186,7 +2186,7 @@ __metadata:
     contentful-sdk-core: ^7.0.2
     json-stringify-safe: ^5.0.1
     type-fest: ^3.1.0
-  checksum: 23f5b46a93dc01a4d22b2e96e8c414c1cc88b70aced984e817027fca502834059889f74f4e5151e578f86f09c2452db2e7e26f902ba4135afdb82f86a9ae0c11
+  checksum: 3d5f9d28667575441f7f66de3c8c27fdc2f99f056c99609aa6661f5b1b755190eef594c8761a81d52edfece1d0eaf8fc9fb356fda4e8d0cb15ab0b20fbef2e84
   languageName: node
   linkType: hard
 
@@ -3114,7 +3114,7 @@ __metadata:
   dependencies:
     "@svgr/webpack": 6.5.1
     base64-img: 1.0.4
-    contentful: 10.2.4
+    contentful: 10.3.0
     dotenv: 16.3.1
     fs-extra: 11.1.1
     gatsby-image: 3.11.0
@@ -3125,7 +3125,7 @@ __metadata:
     prettier: 2.8.8
     react: 18.2.0
     react-dom: 18.2.0
-    swr: 2.1.5
+    swr: 2.2.0
   languageName: unknown
   linkType: soft
 
@@ -3242,14 +3242,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swr@npm:2.1.5":
-  version: 2.1.5
-  resolution: "swr@npm:2.1.5"
+"swr@npm:2.2.0":
+  version: 2.2.0
+  resolution: "swr@npm:2.2.0"
   dependencies:
     use-sync-external-store: ^1.2.0
   peerDependencies:
     react: ^16.11.0 || ^17.0.0 || ^18.0.0
-  checksum: f2ef9b83ec4b2ebf4d520578ab847307700db01ffcab64b3aec6ea94feaf96ca10e38e8b08bc8adfab8eaa6ec1bdfd64f82b6f5c14cc4cb5cf11e6fd22b405a4
+  checksum: 1f04795ff9dff54987cbf8a544afc9e42d1350a99e899be8a7cdc4885f561e3ee464f78245ee2ebc8ced262b04023d134f731e276227319dc2d6e1843389ddd8
   languageName: node
   linkType: hard
 
