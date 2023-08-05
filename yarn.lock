@@ -2704,12 +2704,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:5.1.1":
-  version: 5.1.1
-  resolution: "marked@npm:5.1.1"
+"marked@npm:6.0.0":
+  version: 6.0.0
+  resolution: "marked@npm:6.0.0"
   bin:
     marked: bin/marked.js
-  checksum: e0c6d3a63d01c3b47f7758c3add02abdb3747701b6fce60c4b5602cc3b33122439c5c0a95ac1e8b5fcbb0f7d3aa7af2126aa56074c3d41e207bf9a9ed9948026
+  checksum: 1b02d4254d8aeec4d54799d2191821fd86da8c743361065b523617d1c226ba14ebd8677dc7bef7fa183a4253217c53d0d56e82d378a78b5a1ebaf8409e90136e
   languageName: node
   linkType: hard
 
@@ -3168,7 +3168,7 @@ __metadata:
     fs-extra: 11.1.1
     gatsby-image: 3.11.0
     isomorphic-unfetch: 4.0.2
-    marked: 5.1.1
+    marked: 6.0.0
     next: 13.4.10
     normalize.css: 8.0.1
     prettier: 3.0.0
