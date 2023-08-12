@@ -7,7 +7,7 @@
     "fs-extra": "11.1.1",
     "gatsby-image": "3.11.0",
     "isomorphic-unfetch": "4.0.2",
-    "marked": "5.1.1",
+    "marked": "7.0.2",
     "next": "13.4.10",
     "normalize.css": "8.0.1",
     "prettier": "3.0.0",
