@@ -38,7 +38,7 @@ async function getFieldValue([key, value]) {
 // once Netlify moves their build environment to Node 12
 async function mapFields(item) {
   const fields = await Promise.all(
-    Object.entries(item.fields ? item.fields : item).map(getFieldValue)
+    Object.entries(item.fields ? item.fields : item).map(getFieldValue),
   );
 
   const out = {};
@@ -57,7 +57,7 @@ async function getContent() {
 
     fs.writeFileSync(
       path.join(process.cwd(), "data", `${type}.json`),
-      JSON.stringify(await Promise.all(entries.items.map(mapFields)), null, 2)
+      JSON.stringify(await Promise.all(entries.items.map(mapFields)), null, 2),
     );
     console.log("> Content gotten and written for", type);
   }
@@ -72,5 +72,5 @@ async function getContent() {
   },
   (error) => {
     console.error(error);
-  }
+  },
 );

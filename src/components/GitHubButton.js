@@ -42,7 +42,7 @@ export default function GitHubButton({ namespace, repo, type }) {
       // Return the fetcher
       return cacheForever[url];
     },
-    { revalidateOnFocus: false }
+    { revalidateOnFocus: false },
   );
 
   return (

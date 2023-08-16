@@ -1,7 +1,7 @@
 module.exports = {
   exportPathMap: async function (
     defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
+    { dev, dir, outDir, distDir, buildId },
   ) {
     // Can't generate the RSS feed through this method
     delete defaultPathMap["/rss.xml"];

@@ -12,7 +12,7 @@ const fs = require(`fs`);
 const path = require(`path`);
 const crypto = require(`crypto`);
 
-const qs = require(`qs`);
+const querystring = require(`querystring`);
 const base64Img = require(`base64-img`);
 
 const cacheImage = require(`./cache-image`);
@@ -93,10 +93,10 @@ function createUrl(imgUrl, options = {}) {
       fit: options.resizingBehavior || ``,
       f: options.cropFocus || ``,
       bg: options.background || ``,
-    }).filter((tuple) => !!tuple[1])
+    }).filter((tuple) => !!tuple[1]),
   );
 
-  return `${imgUrl}?${qs.stringify(args)}`;
+  return `${imgUrl}?${querystring.stringify(args)}`;
 }
 
 function getWebpVariant({ image, options }) {
@@ -227,6 +227,6 @@ module.exports = async function getImage(image, rawOptions) {
     ...resolveFluid(image, options),
     srcWebp: webp.src,
     srcSetWebp: webp.srcSet,
-    base64: await getBase64Image(image.file.url, absolutePath)
+    base64: await getBase64Image(image.file.url, absolutePath),
   };
 };

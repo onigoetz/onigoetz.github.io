@@ -10,7 +10,7 @@ export default function Post({ post }) {
       <CardItem>
         <h2>
           <Link href={`blog/[slug]`} as={`blog/${post.slug}`}>
-            <a>{post.title}</a>
+            {post.title}
           </Link>
         </h2>
         <Date>{post.publishDate}</Date>

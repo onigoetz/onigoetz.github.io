@@ -23,7 +23,7 @@ module.exports = async function cacheImage(CACHE_DIR, image, options) {
   const aspectRatio = details.image.height / details.image.width;
   const resultingWidth = Math.round(userWidth || 800);
   const resultingHeight = Math.round(
-    userHeight || resultingWidth * aspectRatio
+    userHeight || resultingWidth * aspectRatio,
   );
 
   const params = [`w=${resultingWidth}`, `h=${resultingHeight}`];

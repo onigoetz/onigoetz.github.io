@@ -27,7 +27,7 @@ module.exports = function getRssXml() {
   const blogPosts = require("../../data/blogPost.json");
 
   blogPosts.sort(
-    (a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate)
+    (a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate),
   );
 
   const { rssItemsXml, latestPostDate } = blogPostsRssXml(blogPosts);

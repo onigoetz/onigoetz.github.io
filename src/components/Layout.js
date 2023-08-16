@@ -43,13 +43,13 @@ export default function Layout({ title, children, me }) {
         <div className={styles.container}>
           <ul>
             <li>
-              <Link href="/">
-                <a className="Link">Projects</a>
+              <Link href="/" className="Link">
+                Projects
               </Link>
             </li>
             <li>
-              <Link href="/blog">
-                <a className="Link">Blog</a>
+              <Link href="/blog" className="Link">
+                Blog
               </Link>
             </li>
           </ul>
@@ -93,4 +93,4 @@ export default function Layout({ title, children, me }) {
       </div>
     </>
   );
-};
+}

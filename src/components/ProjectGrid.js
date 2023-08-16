@@ -60,7 +60,7 @@ export default function ProjectGrid({ projects }) {
           {Object.keys(order)
             .filter(
               (status) =>
-                projects.filter((project) => project.status == status).length
+                projects.filter((project) => project.status == status).length,
             )
             .map((status) => (
               <label key={status} className={styles.status}>
