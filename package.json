@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "@svgr/webpack": "8.1.0",
-    "contentful": "10.5.0",
+    "contentful": "10.5.2",
     "dotenv": "16.3.1",
     "isomorphic-unfetch": "4.0.2",
-    "marked": "7.0.5",
-    "next": "13.4.19",
+    "marked": "9.0.3",
+    "next": "13.5.2",
     "normalize.css": "8.0.1",
-    "prettier": "3.0.2",
+    "prettier": "3.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "swr": "2.2.2"
@@ -19,7 +19,8 @@
     "export": "next export && node src/helpers/generate_rss.js",
     "prettier": "prettier --write *.js src/**/*.js src/**/**/*.js css/*.css src/**/*.css src/**/**/*.css",
     "postinstall": "npm run getcontent",
-    "getcontent": "node src/helpers/getcontent.js install"
+    "getcontent": "node src/helpers/getcontent.js install",
+    "upgrade": "yarn up -R '**'"
   },
   "packageManager": "yarn@3.6.3"
 }
