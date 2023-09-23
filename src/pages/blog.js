@@ -13,7 +13,7 @@ export default function Blog({ posts, me }) {
   );
 }
 
-Blog.getInitialProps = async (ctx) => {
+export async function getStaticProps() {
   const formatter = new Intl.DateTimeFormat("en-GB", {
     year: "numeric",
     month: "long",
@@ -30,7 +30,9 @@ Blog.getInitialProps = async (ctx) => {
     }));
 
   return {
-    posts,
-    me: getPerson(),
+    props: {
+      posts,
+      me: getPerson(),
+    },
   };
-};
+}

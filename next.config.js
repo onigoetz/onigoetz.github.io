@@ -1,7 +1,7 @@
 module.exports = {
   images: {
-    loader: 'custom',
-    formats: ['image/avif', 'image/webp'],
+    loader: "custom",
+    formats: ["image/avif", "image/webp"],
   },
   exportPathMap: async function (
     defaultPathMap,

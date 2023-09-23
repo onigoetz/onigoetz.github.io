@@ -12,7 +12,7 @@ export default function Projects({ projects, me }) {
   );
 }
 
-Projects.getInitialProps = async (ctx) => {
+export async function getStaticProps() {
   const projects = require("../../data/projects.json");
 
   const { marked } = require("marked");
@@ -26,5 +26,5 @@ Projects.getInitialProps = async (ctx) => {
     }
   });
 
-  return { projects, me: getPerson() };
-};
+  return { props: { projects, me: getPerson() } };
+}

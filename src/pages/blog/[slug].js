@@ -72,11 +72,11 @@ export async function getStaticPaths() {
   const posts = require("../../../data/blogPost.json");
 
   return {
-    paths: posts.map(post => ({
-      params: { slug: post.slug }
+    paths: posts.map((post) => ({
+      params: { slug: post.slug },
     })),
-    fallback: false
-  }
+    fallback: false,
+  };
 }
 
 export async function getStaticProps(ctx) {
@@ -94,4 +94,4 @@ export async function getStaticProps(ctx) {
   post.body = marked(post.body);
 
   return { props: { post, me: getPerson() } };
-};
+}
