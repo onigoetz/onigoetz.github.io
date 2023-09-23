@@ -14,23 +14,7 @@ const client = contentful.createClient({
 
 const types = ["blogPost", "projects", "person"];
 
-const image = require("./image.js");
-
 async function getFieldValue([key, value]) {
-  if (key === "heroImage") {
-    value.fields.computed = await image(value.fields, {
-      maxWidth: 1180,
-      background: "rgb:000000",
-    });
-  }
-
-  if (key === "image") {
-    value.fields.computed = await image(value.fields, {
-      maxWidth: 208,
-      background: "rgb:000000",
-    });
-  }
-
   return [key, value.fields ? value.fields : value];
 }
 

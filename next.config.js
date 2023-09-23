@@ -1,4 +1,8 @@
 module.exports = {
+  images: {
+    loader: 'custom',
+    formats: ['image/avif', 'image/webp'],
+  },
   exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId },
@@ -9,16 +13,7 @@ module.exports = {
     // Remove the default dynamic route for blog posts
     delete defaultPathMap["/blog/[slug]"];
 
-    const blogPosts = require("./data/blogPost.json");
-    const posts = {};
-    blogPosts.forEach((post) => {
-      posts[`/blog/${post.slug}`] = {
-        page: "/blog/[slug]",
-        query: { slug: post.slug },
-      };
-    });
-
-    return { ...defaultPathMap, ...posts };
+    return defaultPathMap;
   },
   webpack(config, { isServer }) {
     config.module.rules.push({

@@ -9,7 +9,7 @@ import Twitter from "../../public/assets/twitter.svg";
 import Linkedin from "../../public/assets/linkedin.svg";
 
 import styles from "./Layout.module.css";
-import Img from "gatsby-image";
+import ContentfulImage from "./ContentfulImage";
 
 export default function Layout({ title, children, me }) {
   return (
@@ -31,11 +31,12 @@ export default function Layout({ title, children, me }) {
         />
       </Head>
       <aside className={styles.aside}>
-        <Img
+        <ContentfulImage
           className={styles.picture}
           alt="Picture of Stéphane Goetz"
-          fluid={me.image}
-          style={{ maxWidth: 300 }}
+          src={me.image}
+          width={193}
+          height={173}
         />
         <strong className={styles.title}>Stéphane Goetz</strong>
         <p className={styles.bio}>{me.shortBio}</p>

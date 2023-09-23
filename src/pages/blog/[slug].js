@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import ContentfulImage from "../../components/ContentfulImage";
 
 import Technology from "../../components/Technology";
 import Layout from "../../components/Layout";
@@ -16,11 +16,17 @@ export default function BlogPost({ post, me }) {
     <Layout title={post.title} me={me}>
       {post.heroImage && (
         <div className={styles.hero}>
-          <Img
-            className={styles.heroImage}
-            alt={post.heroImage.description}
-            fluid={post.heroImage.computed}
-          />
+          <div className={styles.heroImage}>
+            <ContentfulImage
+              alt={post.heroImage.description}
+              src={post.heroImage.file.url}
+              width={1180}
+              height={
+                (1180 / post.heroImage.file.details.image.height) *
+                post.heroImage.file.details.image.width
+              }
+            />
+          </div>
         </div>
       )}
 
@@ -62,7 +68,18 @@ export default function BlogPost({ post, me }) {
   );
 }
 
-BlogPost.getInitialProps = async (ctx) => {
+export async function getStaticPaths() {
+  const posts = require("../../../data/blogPost.json");
+
+  return {
+    paths: posts.map(post => ({
+      params: { slug: post.slug }
+    })),
+    fallback: false
+  }
+}
+
+export async function getStaticProps(ctx) {
   const { marked } = require("marked");
   const formatter = new Intl.DateTimeFormat("en-GB", {
     year: "numeric",
@@ -71,10 +88,10 @@ BlogPost.getInitialProps = async (ctx) => {
   });
 
   const posts = require("../../../data/blogPost.json");
-  const post = posts.filter((post) => post.slug === ctx.query.slug)[0];
+  const post = posts.filter((post) => post.slug === ctx.params.slug)[0];
 
   post.publishDate = formatter.format(global.Date.parse(post.publishDate));
   post.body = marked(post.body);
 
-  return { post, me: getPerson() };
+  return { props: { post, me: getPerson() } };
 };
