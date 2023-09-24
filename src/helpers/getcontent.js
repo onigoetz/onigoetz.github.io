@@ -43,7 +43,7 @@ async function getContent() {
       path.join(process.cwd(), "data", `${type}.json`),
       JSON.stringify(await Promise.all(entries.items.map(mapFields)), null, 2),
     );
-    console.log("> Content gotten and written for", type);
+    console.log("> Content retrieved and written for", type);
   }
   return true;
 }

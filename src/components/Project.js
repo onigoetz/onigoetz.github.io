@@ -6,9 +6,12 @@ import Technology from "./Technology";
 import Status from "./Status";
 
 import styles from "./Project.module.css";
+import getBadges from "../helpers/badges";
 
 export default function Project({ project }) {
   const [owner, repo] = (project.githubRepository || "/").split("/");
+
+  const badges = getBadges(project);
 
   return (
     <Card>
@@ -40,12 +43,29 @@ export default function Project({ project }) {
           )}
         </div>
 
-        {project.badges && (
-          <span
-            className={styles.badges}
-            dangerouslySetInnerHTML={{ __html: project.badges }}
-          />
-        )}
+        <div className={styles.badges}>
+          {badges.map((badge) => {
+            const img = (
+              <img key={badge.title} alt={badge.title} src={badge.src} />
+            );
+
+            return (
+              <>
+                {badge.url ? (
+                  <a key={badge.title} href={badge.url} target="_blank">
+                    {img}
+                  </a>
+                ) : (
+                  img
+                )}{" "}
+              </>
+            );
+          })}
+
+          {project.badges && (
+            <span dangerouslySetInnerHTML={{ __html: project.badges }} />
+          )}
+        </div>
       </CardItem>
       <CardItem>
         <div dangerouslySetInnerHTML={{ __html: project.description }} />
