@@ -2437,12 +2437,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:9.1.5":
-  version: 9.1.5
-  resolution: "marked@npm:9.1.5"
+"marked@npm:10.0.0":
+  version: 10.0.0
+  resolution: "marked@npm:10.0.0"
   bin:
     marked: bin/marked.js
-  checksum: 46bee189bb0819379249601df6ba880660ead9bc7676b4a1844f2be9d6948e7283ed4d13900ffcbf1137c4e7eb651728f6313858dfd7619ba8ee466432c95a38
+  checksum: 5882b04a5f0d619757b281f09a67eb8f9e966299083748b51b144b482c56527161cc4dee3ef8e334926c84b7c6ad2bb5c48af5855a52c6ae460131175e3fb93f
   languageName: node
   linkType: hard
 
@@ -2793,7 +2793,7 @@ __metadata:
     contentful: "npm:10.6.5"
     dotenv: "npm:16.3.1"
     isomorphic-unfetch: "npm:4.0.2"
-    marked: "npm:9.1.5"
+    marked: "npm:10.0.0"
     next: "npm:14.0.1"
     normalize.css: "npm:8.0.1"
     prettier: "npm:3.0.3"
