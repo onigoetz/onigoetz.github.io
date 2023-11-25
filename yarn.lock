@@ -1959,9 +1959,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:10.6.10":
-  version: 10.6.10
-  resolution: "contentful@npm:10.6.10"
+"contentful@npm:10.6.12":
+  version: 10.6.12
+  resolution: "contentful@npm:10.6.12"
   dependencies:
     "@contentful/rich-text-types": "npm:^16.0.2"
     axios: "npm:^1.6.0"
@@ -1969,7 +1969,7 @@ __metadata:
     contentful-sdk-core: "npm:^8.1.0"
     json-stringify-safe: "npm:^5.0.1"
     type-fest: "npm:^4.0.0"
-  checksum: 81692f08b6d0a6436787374231f5ef6ced893bf44faf7f513b83a63d4f3ba703e16afed8dc62ae96c0fc88ec1ef063c8394bb87bb56fb9c97bd6e230b7d46eee
+  checksum: 0ab7bb8f22ca70b61b2409c264339833f6f61df8afed579bb5e6d214355b88584da5c74a450803dc2c197cf104946abf3ee2d3af0b3e5abcba628a44226b8384
   languageName: node
   linkType: hard
 
@@ -2790,7 +2790,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
-    contentful: "npm:10.6.10"
+    contentful: "npm:10.6.12"
     dotenv: "npm:16.3.1"
     isomorphic-unfetch: "npm:4.0.2"
     marked: "npm:10.0.0"
