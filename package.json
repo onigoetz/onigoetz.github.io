@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@svgr/webpack": "8.1.0",
-    "contentful": "10.6.10",
+    "contentful": "10.6.12",
     "dotenv": "16.3.1",
     "isomorphic-unfetch": "4.0.2",
     "marked": "10.0.0",
