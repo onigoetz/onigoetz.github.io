@@ -2143,10 +2143,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:16.4.3":
-  version: 16.4.3
-  resolution: "dotenv@npm:16.4.3"
-  checksum: 10c0/c6a572b2dab5d71accb7064c90b38dfd4068c2487be859a0f053460fcaa685a7718e78db51d643b32e0736b318988c31f8c45cb4ab99cd620278f537177cb0ab
+"dotenv@npm:16.4.4":
+  version: 16.4.4
+  resolution: "dotenv@npm:16.4.4"
+  checksum: 10c0/f66ad105144c9106a868c8e244ace6097a0318f63284894e6c7b298c7e096911958837117d936d3c341db550e2fcb21a7a5ad396437638f605460e82b1dd30ee
   languageName: node
   linkType: hard
 
@@ -2791,7 +2791,7 @@ __metadata:
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
     contentful: "npm:10.6.21"
-    dotenv: "npm:16.4.3"
+    dotenv: "npm:16.4.4"
     isomorphic-unfetch: "npm:4.0.2"
     marked: "npm:11.2.0"
     next: "npm:14.1.0"
@@ -2799,7 +2799,7 @@ __metadata:
     prettier: "npm:3.2.5"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
-    swr: "npm:2.2.4"
+    swr: "npm:2.2.5"
   languageName: unknown
   linkType: soft
 
@@ -2900,15 +2900,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swr@npm:2.2.4":
-  version: 2.2.4
-  resolution: "swr@npm:2.2.4"
+"swr@npm:2.2.5":
+  version: 2.2.5
+  resolution: "swr@npm:2.2.5"
   dependencies:
     client-only: "npm:^0.0.1"
     use-sync-external-store: "npm:^1.2.0"
   peerDependencies:
     react: ^16.11.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/ad7d3205f2b4969f6727b25819f2f999af792083b63a25c54fae10bc841c94827fb06652764ef94fa7a46cf9dda25a41f088809919d070dd0fec5b0005a3e839
+  checksum: 10c0/731488d609ac6db60626632e3f76b046f28400b44504b3dfa69231a645127579b1add7a1595e5a6c718e24c80f1399506883bb456ca83c1b621357a0bf5a2a94
   languageName: node
   linkType: hard
 
