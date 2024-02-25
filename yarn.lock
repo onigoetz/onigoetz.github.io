@@ -1790,14 +1790,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.0":
-  version: 1.6.2
-  resolution: "axios@npm:1.6.2"
+"axios@npm:^1.6.7":
+  version: 1.6.7
+  resolution: "axios@npm:1.6.7"
   dependencies:
-    follow-redirects: "npm:^1.15.0"
+    follow-redirects: "npm:^1.15.4"
     form-data: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
-  checksum: 10c0/9b77e030e85e4f9cbcba7bb52fbff67d6ce906c92d213e0bd932346a50140faf83733bf786f55bd58301bd92f9973885c7b87d6348023e10f7eaf286d0791a1d
+  checksum: 10c0/131bf8e62eee48ca4bd84e6101f211961bf6a21a33b95e5dfb3983d5a2fe50d9fffde0b57668d7ce6f65063d3dc10f2212cbcb554f75cfca99da1c73b210358d
   languageName: node
   linkType: hard
 
@@ -1966,17 +1966,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:10.6.21":
-  version: 10.6.21
-  resolution: "contentful@npm:10.6.21"
+"contentful@npm:10.6.22":
+  version: 10.6.22
+  resolution: "contentful@npm:10.6.22"
   dependencies:
     "@contentful/rich-text-types": "npm:^16.0.2"
-    axios: "npm:^1.6.0"
+    axios: "npm:^1.6.7"
     contentful-resolve-response: "npm:^1.8.1"
     contentful-sdk-core: "npm:^8.1.0"
     json-stringify-safe: "npm:^5.0.1"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/7228c16520771b95a6b0ce1b396847d5ffa4e4239a178dbb96b1dfe816d91e4ae0f6476eb4d88cc34e0a995dc88937238ce8496f4d9fc77708b7bf8d0c065dd3
+  checksum: 10c0/c48cd41592838ba2de5f51f9b13f741bf9747b26de719b9a792b49a2b8082a9a6e5d3f8a27fd3d47fabe912be56e50dc65c3c4ab0c9cc463051885aa079b5bd3
   languageName: node
   linkType: hard
 
@@ -2143,10 +2143,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:16.4.4":
-  version: 16.4.4
-  resolution: "dotenv@npm:16.4.4"
-  checksum: 10c0/f66ad105144c9106a868c8e244ace6097a0318f63284894e6c7b298c7e096911958837117d936d3c341db550e2fcb21a7a5ad396437638f605460e82b1dd30ee
+"dotenv@npm:16.4.5":
+  version: 16.4.5
+  resolution: "dotenv@npm:16.4.5"
+  checksum: 10c0/48d92870076832af0418b13acd6e5a5a3e83bb00df690d9812e94b24aff62b88ade955ac99a05501305b8dc8f1b0ee7638b18493deb6fe93d680e5220936292f
   languageName: node
   linkType: hard
 
@@ -2211,13 +2211,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.0":
-  version: 1.15.4
-  resolution: "follow-redirects@npm:1.15.4"
+"follow-redirects@npm:^1.15.4":
+  version: 1.15.5
+  resolution: "follow-redirects@npm:1.15.5"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 10c0/5f37ed9170c9eb19448c5418fdb0f2b73f644b5364834e70791a76ecc7db215246f9773bbef4852cfae4067764ffc852e047f744b661b0211532155b73556a6a
+  checksum: 10c0/418d71688ceaf109dfd6f85f747a0c75de30afe43a294caa211def77f02ef19865b547dfb73fde82b751e1cc507c06c754120b848fe5a7400b0a669766df7615
   languageName: node
   linkType: hard
 
@@ -2790,8 +2790,8 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
-    contentful: "npm:10.6.21"
-    dotenv: "npm:16.4.4"
+    contentful: "npm:10.6.22"
+    dotenv: "npm:16.4.5"
     isomorphic-unfetch: "npm:4.0.2"
     marked: "npm:11.2.0"
     next: "npm:14.1.0"
