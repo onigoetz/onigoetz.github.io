@@ -1970,12 +1970,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful-resolve-response@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "contentful-resolve-response@npm:1.8.1"
+"contentful-resolve-response@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "contentful-resolve-response@npm:1.9.0"
   dependencies:
     fast-copy: "npm:^2.1.7"
-  checksum: 10c0/5d147b94815b9227405e512be5202be312d80fa0b61732c128094c1c73a16b5d4fbf7c9f68e93dc2d1b648a99f380fb9be7d1890fadac9ed2e736723c78dc555
+  checksum: 10c0/0b2cb07cd0457aebdc28a06ac65b5a892a47eb6f95d2f563ac4f7b85745331fa4be6895ae0d5a14ea3ca6960ad47f4a188e0b06edd94062ef304919095b14872
   languageName: node
   linkType: hard
 
@@ -1991,18 +1991,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:10.12.15":
-  version: 10.12.15
-  resolution: "contentful@npm:10.12.15"
+"contentful@npm:10.13.1":
+  version: 10.13.1
+  resolution: "contentful@npm:10.13.1"
   dependencies:
     "@contentful/content-source-maps": "npm:^0.6.0"
     "@contentful/rich-text-types": "npm:^16.0.2"
     axios: "npm:~1.6.8"
-    contentful-resolve-response: "npm:^1.8.1"
+    contentful-resolve-response: "npm:^1.9.0"
     contentful-sdk-core: "npm:^8.1.0"
     json-stringify-safe: "npm:^5.0.1"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/94277f780a831285cf937294c6647beda6a08e02675769833c2e6561a4dc57f2de47f735dd0ada8025d439e8a7ef58765a1b8753921d3e1b32e360deaf5c8c06
+  checksum: 10c0/4279c1df40d2848d7d2e707bcc48566f339972d93991aa604d19115d4139fc7559d0c6a77c5772578d2351cb1332b5156492f141a3eca75b4f5a991a38bea762
   languageName: node
   linkType: hard
 
@@ -2835,7 +2835,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
-    contentful: "npm:10.12.15"
+    contentful: "npm:10.13.1"
     dotenv: "npm:16.4.5"
     isomorphic-unfetch: "npm:4.0.2"
     marked: "npm:13.0.3"
