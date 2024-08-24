@@ -22,5 +22,5 @@
     "getcontent": "node src/helpers/getcontent.js install",
     "upgrade": "yarn up -R '**'"
   },
-  "packageManager": "yarn@4.4.0"
+  "packageManager": "yarn@4.4.1"
 }
