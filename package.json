@@ -1,10 +1,10 @@
 {
   "dependencies": {
     "@svgr/webpack": "8.1.0",
-    "contentful": "11.2.1",
+    "contentful": "11.2.3",
     "dotenv": "16.4.5",
     "isomorphic-unfetch": "4.0.2",
-    "marked": "15.0.0",
+    "marked": "15.0.2",
     "next": "15.0.3",
     "normalize.css": "8.0.1",
     "prettier": "3.3.3",
@@ -22,5 +22,5 @@
     "getcontent": "node src/helpers/getcontent.js install",
     "upgrade": "yarn up -R '**'"
   },
-  "packageManager": "yarn@4.5.1"
+  "packageManager": "yarn@4.5.2"
 }
