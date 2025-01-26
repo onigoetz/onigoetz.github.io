@@ -5,7 +5,7 @@
     "dotenv": "16.4.7",
     "isomorphic-unfetch": "4.0.2",
     "marked": "15.0.6",
-    "next": "15.1.5",
+    "next": "15.1.6",
     "normalize.css": "8.0.1",
     "prettier": "3.4.2",
     "react": "19.0.0",
