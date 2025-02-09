@@ -2193,9 +2193,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:11.4.4":
-  version: 11.4.4
-  resolution: "contentful@npm:11.4.4"
+"contentful@npm:11.4.5":
+  version: 11.4.5
+  resolution: "contentful@npm:11.4.5"
   dependencies:
     "@contentful/content-source-maps": "npm:^0.11.7"
     "@contentful/rich-text-types": "npm:^16.6.1"
@@ -2204,7 +2204,7 @@ __metadata:
     contentful-sdk-core: "npm:^9.0.1"
     json-stringify-safe: "npm:^5.0.1"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/2436dcceb2e13cf8b7e5957b8b18f6be6e91c474b22c9671f5f05d62c25478377241e7569c1c3c4594f1d6d91a5ce29ffe598548b2b3641ad08e280cc47598e1
+  checksum: 10c0/d8570df113250a171bcb6aa38ba8d928bcf5efac29e18cfd9afead74c8da6e624d68ba224d2540edd7cfd3d27ecea6f889e9ea748248012519f23c1c081c9fd0
   languageName: node
   linkType: hard
 
@@ -3135,7 +3135,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
-    contentful: "npm:11.4.4"
+    contentful: "npm:11.4.5"
     dotenv: "npm:16.4.7"
     isomorphic-unfetch: "npm:4.0.2"
     marked: "npm:15.0.6"
@@ -3144,7 +3144,7 @@ __metadata:
     prettier: "npm:3.4.2"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
-    swr: "npm:2.3.0"
+    swr: "npm:2.3.2"
   languageName: unknown
   linkType: soft
 
@@ -3357,15 +3357,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swr@npm:2.3.0":
-  version: 2.3.0
-  resolution: "swr@npm:2.3.0"
+"swr@npm:2.3.2":
+  version: 2.3.2
+  resolution: "swr@npm:2.3.2"
   dependencies:
     dequal: "npm:^2.0.3"
     use-sync-external-store: "npm:^1.4.0"
   peerDependencies:
     react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/192497881013654bc82d2787b60ad0701113e8ae41c511dfa8d55bcf58582657a92a4cb2854d4ea2ceaa1055e67e58daf9bd98ada2786a3035ba12898da578f1
+  checksum: 10c0/981d3138c1959f1f15ddb74ed3c98f34fbcae8e68ee1b0e6ce3af7e1fcf65ecdb3a2c525b42338cbcef0f7a992d41e1aeb3982501e86239e8aeef6c34fe3b580
   languageName: node
   linkType: hard
 
