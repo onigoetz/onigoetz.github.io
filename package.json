@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "@svgr/webpack": "8.1.0",
-    "contentful": "11.4.5",
+    "contentful": "11.4.6",
     "dotenv": "16.4.7",
     "isomorphic-unfetch": "4.0.2",
-    "marked": "15.0.6",
-    "next": "15.1.6",
+    "marked": "15.0.7",
+    "next": "15.1.7",
     "normalize.css": "8.0.1",
-    "prettier": "3.4.2",
+    "prettier": "3.5.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "swr": "2.3.2"
