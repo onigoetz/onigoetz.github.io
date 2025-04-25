@@ -2250,9 +2250,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:11.5.13":
-  version: 11.5.13
-  resolution: "contentful@npm:11.5.13"
+"contentful@npm:11.5.16":
+  version: 11.5.16
+  resolution: "contentful@npm:11.5.16"
   dependencies:
     "@contentful/content-source-maps": "npm:^0.11.8"
     "@contentful/rich-text-types": "npm:^16.6.1"
@@ -2261,7 +2261,7 @@ __metadata:
     contentful-sdk-core: "npm:^9.0.1"
     json-stringify-safe: "npm:^5.0.1"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/006552297c3dea053d13e001ba75f3441818bcf877621a8feb723881906fb919732f485d9b2a3ec19902cff25d90ca16f715fcf8db2cb4193a339bf34c669140
+  checksum: 10c0/109a42593fb6ea24295208c028f15f1c9332694c9947e7a130975b28f6e41cb8ca865ccd694a88e41be2e68f3c334af87bb03f813ba89e752a52eca5f8aa8210
   languageName: node
   linkType: hard
 
@@ -2453,10 +2453,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:16.4.7":
-  version: 16.4.7
-  resolution: "dotenv@npm:16.4.7"
-  checksum: 10c0/be9f597e36a8daf834452daa1f4cc30e5375a5968f98f46d89b16b983c567398a330580c88395069a77473943c06b877d1ca25b4afafcdd6d4adb549e8293462
+"dotenv@npm:16.5.0":
+  version: 16.5.0
+  resolution: "dotenv@npm:16.5.0"
+  checksum: 10c0/5bc94c919fbd955bf0ba44d33922a1e93d1078e64a1db5c30faeded1d996e7a83c55332cb8ea4fae5a9ca4d0be44cbceb95c5811e70f9f095298df09d1997dd9
   languageName: node
   linkType: hard
 
@@ -2813,12 +2813,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:15.0.7":
-  version: 15.0.7
-  resolution: "marked@npm:15.0.7"
+"marked@npm:15.0.11":
+  version: 15.0.11
+  resolution: "marked@npm:15.0.11"
   bin:
     marked: bin/marked.js
-  checksum: 10c0/0b9d07bace37bbf0548bae356c4184765afa4d2296ed0be4418aa4bb0ce703f323dc1a475125d536581f9fe264797e6265dd0b57499d97c0fe0f29bc6d016343
+  checksum: 10c0/d532db4955c1f2ac6efc65a644725e9e12e7944cb6af40c7148baecfd3b3c2f3564229b3daf12d2125635466448fb9b367ce52357be3aea0273e3d152efdbdcf
   languageName: node
   linkType: hard
 
@@ -3192,10 +3192,10 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
-    contentful: "npm:11.5.13"
-    dotenv: "npm:16.4.7"
+    contentful: "npm:11.5.16"
+    dotenv: "npm:16.5.0"
     isomorphic-unfetch: "npm:4.0.2"
-    marked: "npm:15.0.7"
+    marked: "npm:15.0.11"
     next: "npm:15.2.2"
     normalize.css: "npm:8.0.1"
     prettier: "npm:3.5.3"
