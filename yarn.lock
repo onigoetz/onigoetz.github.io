@@ -2257,9 +2257,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:11.5.20":
-  version: 11.5.20
-  resolution: "contentful@npm:11.5.20"
+"contentful@npm:11.5.23":
+  version: 11.5.23
+  resolution: "contentful@npm:11.5.23"
   dependencies:
     "@contentful/content-source-maps": "npm:^0.11.8"
     "@contentful/rich-text-types": "npm:^16.6.1"
@@ -2268,7 +2268,7 @@ __metadata:
     contentful-sdk-core: "npm:^9.0.1"
     json-stringify-safe: "npm:^5.0.1"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/d34295dada666806f4e08d13bcefd5955bd3c7cbe77b5debecd1512cc06a2b0ac62620611154b49ae1aec0802dd2aa5ca9ece5eed4d831b0c9ad3f3357944f3f
+  checksum: 10c0/a4bc9bb633bc54fde064d994ea60c484315d90e474793cba57e10c3a1941d1ba53e68c9833ff2300f9b4b28555c73ba6962ddb24b84572c50cfb4bf52d45ed62
   languageName: node
   linkType: hard
 
@@ -2820,12 +2820,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:15.0.11":
-  version: 15.0.11
-  resolution: "marked@npm:15.0.11"
+"marked@npm:15.0.12":
+  version: 15.0.12
+  resolution: "marked@npm:15.0.12"
   bin:
     marked: bin/marked.js
-  checksum: 10c0/d532db4955c1f2ac6efc65a644725e9e12e7944cb6af40c7148baecfd3b3c2f3564229b3daf12d2125635466448fb9b367ce52357be3aea0273e3d152efdbdcf
+  checksum: 10c0/e09da211544b787ecfb25fed07af206060bf7cd6d9de6cb123f15c496a57f83b7aabea93340aaa94dae9c94e097ae129377cad6310abc16009590972e85f4212
   languageName: node
   linkType: hard
 
@@ -3199,10 +3199,10 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
-    contentful: "npm:11.5.20"
+    contentful: "npm:11.5.23"
     dotenv: "npm:16.5.0"
     isomorphic-unfetch: "npm:4.0.2"
-    marked: "npm:15.0.11"
+    marked: "npm:15.0.12"
     next: "npm:15.3.2"
     normalize.css: "npm:8.0.1"
     prettier: "npm:3.5.3"
