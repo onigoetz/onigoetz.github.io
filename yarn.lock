@@ -2257,9 +2257,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:11.7.2":
-  version: 11.7.2
-  resolution: "contentful@npm:11.7.2"
+"contentful@npm:11.7.3":
+  version: 11.7.3
+  resolution: "contentful@npm:11.7.3"
   dependencies:
     "@contentful/content-source-maps": "npm:^0.11.8"
     "@contentful/rich-text-types": "npm:^16.6.1"
@@ -2268,7 +2268,7 @@ __metadata:
     contentful-sdk-core: "npm:^9.0.1"
     json-stringify-safe: "npm:^5.0.1"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/0703f79f1837d89346b01fac601fe9d9841e52ded734f393f09a61c51d8e595d65990b2fa98934c1bdc85d0652fba6122ee24d8e6e2e610b95a6943c4a0b6ab1
+  checksum: 10c0/469c8fe593233331d6683ea531dc99c9ddb4634625965ede6591a72e5387d7d1afbc6b2e7157b13d17f76a9ad9eac711357902eb633872802f0a47059484be25
   languageName: node
   linkType: hard
 
@@ -2460,10 +2460,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:16.5.0":
-  version: 16.5.0
-  resolution: "dotenv@npm:16.5.0"
-  checksum: 10c0/5bc94c919fbd955bf0ba44d33922a1e93d1078e64a1db5c30faeded1d996e7a83c55332cb8ea4fae5a9ca4d0be44cbceb95c5811e70f9f095298df09d1997dd9
+"dotenv@npm:16.6.1":
+  version: 16.6.1
+  resolution: "dotenv@npm:16.6.1"
+  checksum: 10c0/15ce56608326ea0d1d9414a5c8ee6dcf0fffc79d2c16422b4ac2268e7e2d76ff5a572d37ffe747c377de12005f14b3cc22361e79fc7f1061cce81f77d2c973dc
   languageName: node
   linkType: hard
 
@@ -3054,12 +3054,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.5.3":
-  version: 3.5.3
-  resolution: "prettier@npm:3.5.3"
+"prettier@npm:3.6.2":
+  version: 3.6.2
+  resolution: "prettier@npm:3.6.2"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/3880cb90b9dc0635819ab52ff571518c35bd7f15a6e80a2054c05dbc8a3aa6e74f135519e91197de63705bcb38388ded7e7230e2178432a1468005406238b877
+  checksum: 10c0/488cb2f2b99ec13da1e50074912870217c11edaddedeadc649b1244c749d15ba94e846423d062e2c4c9ae683e2d65f754de28889ba06e697ac4f988d44f45812
   languageName: node
   linkType: hard
 
@@ -3199,13 +3199,13 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@svgr/webpack": "npm:8.1.0"
-    contentful: "npm:11.7.2"
-    dotenv: "npm:16.5.0"
+    contentful: "npm:11.7.3"
+    dotenv: "npm:16.6.1"
     isomorphic-unfetch: "npm:4.0.2"
     marked: "npm:15.0.12"
     next: "npm:15.3.4"
     normalize.css: "npm:8.0.1"
-    prettier: "npm:3.5.3"
+    prettier: "npm:3.6.2"
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
     swr: "npm:2.3.3"
