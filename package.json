@@ -5,12 +5,12 @@
     "dotenv": "17.2.1",
     "isomorphic-unfetch": "4.0.2",
     "marked": "15.0.12",
-    "next": "15.4.5",
+    "next": "15.4.6",
     "normalize.css": "8.0.1",
     "prettier": "3.6.2",
     "react": "19.1.1",
     "react-dom": "19.1.1",
-    "swr": "2.3.4"
+    "swr": "2.3.5"
   },
   "scripts": {
     "dev": "next",
