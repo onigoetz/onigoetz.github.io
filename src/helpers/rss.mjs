@@ -1,5 +1,5 @@
 import { marked } from "marked";
-import blogPosts from "../../data/blogPost.json" assert { type: "json" };
+import blogPosts from "../../data/blogPost.json" with { type: "json" };
 
 const blogPostsRssXml = (blogPosts) => {
   let latestPostDate = "";
