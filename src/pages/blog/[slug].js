@@ -8,6 +8,7 @@ import Date from "../../components/Date";
 
 import styles from "./[slug].module.css";
 import { getPerson } from "../../helpers/utils";
+import { marked } from "marked";
 
 import Tag from "../../../public/assets/tag.svg";
 
@@ -80,7 +81,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
-  const { marked } = require("marked");
   const formatter = new Intl.DateTimeFormat("en-GB", {
     year: "numeric",
     month: "long",

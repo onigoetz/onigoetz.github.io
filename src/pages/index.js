@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import ProjectGrid from "../components/ProjectGrid";
 import { getPerson } from "../helpers/utils";
 
+import { marked } from "marked";
+
 export default function Projects({ projects, me }) {
   return (
     <Layout title="My Projects" me={me}>
@@ -14,8 +16,6 @@ export default function Projects({ projects, me }) {
 
 export async function getStaticProps() {
   const projects = require("../../data/projects.json");
-
-  const { marked } = require("marked");
   projects.forEach((item) => {
     if (item.badges) {
       item.badges = marked(item.badges);

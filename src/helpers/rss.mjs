@@ -1,5 +1,7 @@
+import { marked } from "marked";
+import blogPosts from "../../data/blogPost.json" with { type: "json" };
+
 const blogPostsRssXml = (blogPosts) => {
-  const { marked } = require("marked");
   let latestPostDate = "";
   let rssItemsXml = "";
   blogPosts.forEach((post) => {
@@ -23,9 +25,7 @@ const blogPostsRssXml = (blogPosts) => {
   };
 };
 
-module.exports = function getRssXml() {
-  const blogPosts = require("../../data/blogPost.json");
-
+export default function getRssXml() {
   blogPosts.sort(
     (a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate),
   );
