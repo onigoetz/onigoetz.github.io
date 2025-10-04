@@ -4,8 +4,9 @@
   gap: 1rem;
 }
 
+/** mobile first: articles take the full width */
 .container > article {
-  grid-column: auto / span 2;
+  grid-column: auto/ span 6;
 }
 
 .container > article h2 {
@@ -13,12 +14,21 @@
   line-height: 0.95;
 }
 
-.container > article:first-child,
-.container > article:nth-child(2) {
-  grid-column: auto / span 3;
+/** on larger screens: put two articles on the same row but keep the first one on one row */
+@media (min-width: 480px) {
+  .container > article:not(:first-child) {
+    grid-column: auto / span 3;
+  }
 }
 
-.container > article:first-child h2,
-.container > article:nth-child(2) h2 {
-  font-size: 1.5rem;
+@media (min-width: 1200px) {
+  /* on very large screens: put the first two articles on the same row */
+  .container > article:is(:first-child, :nth-child(2)) {
+    grid-column: auto / span 3;
+  }
+
+  /* all other rows contain three articles */
+  .container > article:not(:first-child, :nth-child(2)) {
+    grid-column: auto / span 2;
+  }
 }
