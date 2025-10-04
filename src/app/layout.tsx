@@ -15,6 +15,26 @@ import { SiBluesky, SiGithub, SiLinkedin, SiX } from "react-icons/si";
 import styles from "./Layout.module.css";
 import ContentfulImage from "@components/ContentfulImage";
 import { getMe } from "@data";
+import { Metadata, Viewport } from "next";
+
+export const metadata: Metadata = {
+  title: "Onigoetz.ch",
+  description:
+    "My personal website, with my personal projects and a few articles.",
+  authors: [{ name: "Stéphane Goetz" }],
+  robots: "index, follow",
+  icons: {
+    icon: "/assets/favicon.ico",
+    shortcut: "/assets/favicon-16x16.png",
+    apple: "/assets/apple-touch-icon.png",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+  themeColor: "#e6fffe",
+};
 
 export default async function Layout({ children }) {
   const me = getMe();
@@ -23,13 +43,6 @@ export default async function Layout({ children }) {
     <html lang="en">
       <head>
         <title>Onigoetz.ch</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          name="description"
-          content="My personal website, with my personal projects and a few articles."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Stéphane Goetz" />
         <link
           rel="alternate"
           type="application/rss+xml"
@@ -70,43 +83,43 @@ export default async function Layout({ children }) {
             </ul>
 
             <div className={styles.socialButtons}>
-                <a
-                  href="https://github.com/onigoetz"
-                  className="github"
-                  title="Github Profile"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <SiGithub style={{ fill: "#181717", maxWidth: 50 }} />
-                </a>
-                <a
-                  href="https://bsky.app/profile/onigoetz.bsky.social"
-                  className="bluesky"
-                  title="Bluesky Profile"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <SiBluesky style={{ fill: "#1DA1F2", maxWidth: 50 }} />
-                </a>
-                <a
-                  href="https://x.com/onigoetz"
-                  className="xsocial"
-                  title="X Profile"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <SiX style={{ fill: "#000", maxWidth: 50 }} />
-                </a>
-                <a
-                  href="https://ch.linkedin.com/in/stephanegoetz"
-                  className="linkedin"
-                  title="LinkedIn profile"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <SiLinkedin style={{ fill: "#1083fe", maxWidth: 50 }} />
-                </a>
-              </div>
+              <a
+                href="https://github.com/onigoetz"
+                className="github"
+                title="Github Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <SiGithub style={{ fill: "#181717", maxWidth: 50 }} />
+              </a>
+              <a
+                href="https://bsky.app/profile/onigoetz.bsky.social"
+                className="bluesky"
+                title="Bluesky Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <SiBluesky style={{ fill: "#1DA1F2", maxWidth: 50 }} />
+              </a>
+              <a
+                href="https://x.com/onigoetz"
+                className="xsocial"
+                title="X Profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <SiX style={{ fill: "#000", maxWidth: 50 }} />
+              </a>
+              <a
+                href="https://ch.linkedin.com/in/stephanegoetz"
+                className="linkedin"
+                title="LinkedIn profile"
+                target="_blank"
+                rel="noopener"
+              >
+                <SiLinkedin style={{ fill: "#1083fe", maxWidth: 50 }} />
+              </a>
+            </div>
           </div>
         </aside>
 

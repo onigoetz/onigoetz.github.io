@@ -1,23 +1,22 @@
 import React from "react";
-import ContentfulImage from "@components/ContentfulImage";
+import { Metadata } from "next";
+import { HiOutlineTag } from "react-icons/hi2";
+import { marked } from "marked";
 
+import { getPostBySlug, getPosts } from "@data";
+import ContentfulImage from "@components/ContentfulImage";
 import Technology from "@components/Technology";
 import Card, { CardItem } from "@components/Card";
 import Date from "@components/Date";
 
 import styles from "./page.module.css";
-import { marked } from "marked";
-
-import { HiOutlineTag } from "react-icons/hi2";
-import { getPostBySlug, getPosts } from "@data";
-
 
 export async function generateStaticParams() {
   const posts = getPosts();
-  
+
   return posts.map((post) => ({
     slug: post.slug,
-  }))
+  }));
 }
 
 export async function generateMetadata({
@@ -28,16 +27,47 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPostBySlug(slug);
 
-  return {
-    title: `${post.title} · Onigoetz.ch`,
-    description: post.description,
+  const description = post.description;
+  const title = `${post.title} · Onigoetz.ch`;
+
+  const metadata: Metadata = {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: "https://www.onigoetz.ch",
+      siteName: "Onigoetz.ch",
+      locale: "en",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      creator: "@onigoetz",
+    },
   };
+
+  if (post.heroImage) {
+    metadata.openGraph!.images = [
+      {
+        url: post.heroImage.file.url,
+        width: post.heroImage.file.details.image.width,
+        height: post.heroImage.file.details.image.height,
+        alt: post.heroImage.description,
+      },
+    ];
+    metadata.twitter!.images = [post.heroImage.file.url];
+  }
+
+  return metadata;
 }
 
 export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
 

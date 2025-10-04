@@ -37,7 +37,7 @@ interface FullPost extends PostExcerpt {
   body: string;
   tags: string[];
   technologies: string[];
-  heroImage: {
+  heroImage?: {
     title: string;
     description: string;
     file: {
