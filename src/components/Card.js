@@ -8,3 +8,11 @@ export default function Card({ children }) {
 export function CardItem({ children }) {
   return <div className={styles.item}>{children}</div>;
 }
+
+export function CardHeader({ children, image }) {
+  return (
+    <div className={styles.header} style={{ backgroundImage: `url(${image}?h=200&q=75)`, backgroundSize: 'cover' }}>
+      <div className={styles.headerBackground}>{children}</div>
+    </div>
+  );
+}

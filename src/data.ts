@@ -1,4 +1,4 @@
-interface Me {
+export interface Me {
   image: string;
   shortBio: string;
 }
@@ -15,28 +15,11 @@ const formatter = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
 });
 
-interface PostExcerpt {
+export interface PostExcerpt {
   title: string;
   slug: string;
   description: string;
   publishDate: string;
-}
-
-export function getPosts(): PostExcerpt[] {
-  return require("../data/blogPost.json")
-    .sort((a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate))
-    .map((post) => ({
-      title: post.title,
-      slug: post.slug,
-      description: post.description,
-      publishDate: formatter.format(Date.parse(post.publishDate)),
-    }));
-}
-
-interface FullPost extends PostExcerpt {
-  body: string;
-  tags: string[];
-  technologies: string[];
   heroImage?: {
     title: string;
     description: string;
@@ -55,6 +38,23 @@ interface FullPost extends PostExcerpt {
   };
 }
 
+export function getPosts(): PostExcerpt[] {
+  return require("../data/blogPost.json")
+    .sort((a, b) => Date.parse(b.publishDate) - Date.parse(a.publishDate))
+    .map((post) => ({
+      title: post.title,
+      slug: post.slug,
+      description: post.description,
+      publishDate: formatter.format(Date.parse(post.publishDate)),
+      heroImage: post.heroImage,
+    }));
+}
+
+export interface FullPost extends PostExcerpt {
+  body: string;
+  tags: string[];
+  technologies: string[];
+}
 
 export function getPostBySlug(slug: string): FullPost {
   const post = require("../data/blogPost.json").find(

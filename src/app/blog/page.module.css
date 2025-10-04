@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.container > article {
+  grid-column: auto / span 2;
+}
+
+.container > article h2 {
+  font-size: 1.2rem;
+  line-height: 0.95;
+}
+
+.container > article:first-child,
+.container > article:nth-child(2) {
+  grid-column: auto / span 3;
+}
+
+.container > article:first-child h2,
+.container > article:nth-child(2) h2 {
+  font-size: 1.5rem;
+}
