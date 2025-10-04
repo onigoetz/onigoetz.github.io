@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 const contentfulLoader = ({ src, width, quality }) => {

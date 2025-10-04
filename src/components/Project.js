@@ -6,7 +6,7 @@ import Technology from "./Technology";
 import Status from "./Status";
 
 import styles from "./Project.module.css";
-import getBadges from "../helpers/badges";
+import getBadges from "@helpers/badges";
 
 export default function Project({ project }) {
   const [owner, repo] = (project.githubRepository || "/").split("/");

@@ -1,6 +1,5 @@
 import React from "react";
 import useSWR from "swr";
-import fetch from "isomorphic-unfetch";
 
 import styles from "./GitHubButton.module.css";
 

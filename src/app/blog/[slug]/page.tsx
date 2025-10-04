@@ -1,20 +1,51 @@
 import React from "react";
-import ContentfulImage from "../../components/ContentfulImage";
+import ContentfulImage from "@components/ContentfulImage";
 
-import Technology from "../../components/Technology";
-import Layout from "../../components/Layout";
-import Card, { CardItem } from "../../components/Card";
-import Date from "../../components/Date";
+import Technology from "@components/Technology";
+import Card, { CardItem } from "@components/Card";
+import Date from "@components/Date";
 
-import styles from "./[slug].module.css";
-import { getPerson } from "../../helpers/utils";
+import styles from "./page.module.css";
 import { marked } from "marked";
 
-import Tag from "../../../public/assets/tag.svg";
+import { HiOutlineTag } from "react-icons/hi2";
+import { getPostBySlug, getPosts } from "@data";
 
-export default function BlogPost({ post, me }) {
+
+export async function generateStaticParams() {
+  const posts = getPosts();
+  
+  return posts.map((post) => ({
+    slug: post.slug,
+  }))
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+
+  return {
+    title: `${post.title} · Onigoetz.ch`,
+    description: post.description,
+  };
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params;
+
+  const post = getPostBySlug(slug);
+  post.body = await marked(post.body);
+
   return (
-    <Layout title={post.title} me={me}>
+    <>
       {post.heroImage && (
         <div className={styles.hero}>
           <div className={styles.heroImage}>
@@ -46,14 +77,14 @@ export default function BlogPost({ post, me }) {
             {post.tags &&
               post.tags.map((tag) => (
                 <React.Fragment key={tag}>
-                  <Tag
+                  <HiOutlineTag
                     style={{
                       height: "1em",
                       width: "1em",
                       lineHeight: "1em",
                       display: "inline-block",
                       transform: "translate(.3em, .2em)",
-                      fill: "#555",
+                      color: "#555",
                     }}
                   />
                   <span className={styles.tag}>{tag}</span>
@@ -65,33 +96,6 @@ export default function BlogPost({ post, me }) {
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
         </CardItem>
       </Card>
-    </Layout>
+    </>
   );
-}
-
-export async function getStaticPaths() {
-  const posts = require("../../../data/blogPost.json");
-
-  return {
-    paths: posts.map((post) => ({
-      params: { slug: post.slug },
-    })),
-    fallback: false,
-  };
-}
-
-export async function getStaticProps(ctx) {
-  const formatter = new Intl.DateTimeFormat("en-GB", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-
-  const posts = require("../../../data/blogPost.json");
-  const post = posts.filter((post) => post.slug === ctx.params.slug)[0];
-
-  post.publishDate = formatter.format(global.Date.parse(post.publishDate));
-  post.body = marked(post.body);
-
-  return { props: { post, me: getPerson() } };
 }

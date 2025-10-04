@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import Card, { CardItem } from "../components/Card";
+import Card, { CardItem } from "@components/Card";
 import Date from "./Date";
 
 export default function Post({ post }) {
