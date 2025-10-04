@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
 /* eslint-enable */
 
 import "normalize.css/normalize.css";
@@ -58,68 +57,70 @@ export default async function Layout({ children }) {
       </head>
       <body>
         <aside className={styles.aside}>
-          <ContentfulImage
-            className={styles.picture}
-            alt="Picture of Stéphane Goetz"
-            src={me.image}
-            width={193}
-            height={173}
-          />
-          <strong className={styles.title}>Stéphane Goetz</strong>
-          <p className={styles.bio}>{me.shortBio}</p>
+          <div className={styles.picture}>
+            <ContentfulImage
+              alt="Picture of Stéphane Goetz"
+              src={me.image}
+              width={193}
+              height={173}
+            />
+          </div>
 
-          <div className={styles.container}>
-            <ul>
-              <li>
-                <Link href="/" className="Link">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="Link">
-                  Blog
-                </Link>
-              </li>
-            </ul>
+          <div className={styles.presentation}>
+            <strong className={styles.title}>Stéphane Goetz</strong>
+            <div className={styles.bio}>{me.shortBio}</div>
+          </div>
 
-            <div className={styles.socialButtons}>
-              <a
-                href="https://github.com/onigoetz"
-                className="github"
-                title="Github Profile"
-                target="_blank"
-                rel="noopener"
-              >
-                <SiGithub style={{ fill: "#181717", maxWidth: 50 }} />
-              </a>
-              <a
-                href="https://bsky.app/profile/onigoetz.bsky.social"
-                className="bluesky"
-                title="Bluesky Profile"
-                target="_blank"
-                rel="noopener"
-              >
-                <SiBluesky style={{ fill: "#1DA1F2", maxWidth: 50 }} />
-              </a>
-              <a
-                href="https://x.com/onigoetz"
-                className="xsocial"
-                title="X Profile"
-                target="_blank"
-                rel="noopener"
-              >
-                <SiX style={{ fill: "#000", maxWidth: 50 }} />
-              </a>
-              <a
-                href="https://ch.linkedin.com/in/stephanegoetz"
-                className="linkedin"
-                title="LinkedIn profile"
-                target="_blank"
-                rel="noopener"
-              >
-                <SiLinkedin style={{ fill: "#1083fe", maxWidth: 50 }} />
-              </a>
-            </div>
+          <ul className={styles.links}>
+            <li>
+              <Link href="/" className="Link">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" className="Link">
+                Blog
+              </Link>
+            </li>
+          </ul>
+
+          <div className={styles.socialButtons}>
+            <a
+              href="https://github.com/onigoetz"
+              className="github"
+              title="Github Profile"
+              target="_blank"
+              rel="noopener"
+            >
+              <SiGithub style={{ fill: "#181717", maxWidth: 50 }} />
+            </a>
+            <a
+              href="https://bsky.app/profile/onigoetz.bsky.social"
+              className="bluesky"
+              title="Bluesky Profile"
+              target="_blank"
+              rel="noopener"
+            >
+              <SiBluesky style={{ fill: "#1DA1F2", maxWidth: 50 }} />
+            </a>
+            <a
+              href="https://x.com/onigoetz"
+              className="xsocial"
+              title="X Profile"
+              target="_blank"
+              rel="noopener"
+            >
+              <SiX style={{ fill: "#000", maxWidth: 50 }} />
+            </a>
+            <a
+              href="https://ch.linkedin.com/in/stephanegoetz"
+              className="linkedin"
+              title="LinkedIn profile"
+              target="_blank"
+              rel="noopener"
+            >
+              <SiLinkedin style={{ fill: "#1083fe", maxWidth: 50 }} />
+            </a>
           </div>
         </aside>
 
