@@ -123,7 +123,7 @@ export default async function Page({
           </p>
         </CardItem>
         <CardItem>
-          <div dangerouslySetInnerHTML={{ __html: post.body }} />
+          <div className="s-content" dangerouslySetInnerHTML={{ __html: post.body }} />
         </CardItem>
       </Card>
     </>
