@@ -1,7 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
 import { HiOutlineTag } from "react-icons/hi2";
-import { marked } from "marked";
 
 import { getPostBySlug, getPosts } from "@data";
 import ContentfulImage from "@components/ContentfulImage";
@@ -10,6 +9,7 @@ import Card, { CardItem } from "@components/Card";
 import Date from "@components/Date";
 
 import styles from "./page.module.css";
+import Markdown from "@components/Markdown";
 
 export async function generateStaticParams() {
   const posts = getPosts();
@@ -72,8 +72,6 @@ export default async function Page({
   const { slug } = await params;
 
   const post = getPostBySlug(slug);
-  post.body = await marked(post.body);
-
   return (
     <>
       {post.heroImage && (
@@ -101,7 +99,7 @@ export default async function Page({
                 <Technology key={tag} technology={tag} />
               ))}
           </h1>
-          <p>
+          <div>
             <Date>{post.publishDate}</Date>
 
             {post.tags &&
@@ -120,10 +118,12 @@ export default async function Page({
                   <span className={styles.tag}>{tag}</span>
                 </React.Fragment>
               ))}
-          </p>
+          </div>
         </CardItem>
         <CardItem>
-          <div className="s-content" dangerouslySetInnerHTML={{ __html: post.body }} />
+          <div className="s-content">
+            <Markdown content={post.body} />
+          </div>
         </CardItem>
       </Card>
     </>

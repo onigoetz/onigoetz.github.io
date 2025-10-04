@@ -14,23 +14,13 @@ const client = contentful.createClient({
 
 const types = ["blogPost", "projects", "person"];
 
-async function getFieldValue([key, value]) {
+function getFieldValue([key, value]) {
   return [key, value.fields ? value.fields : value];
 }
 
-// This whole thing can be removed with `Object.fromEntries`
-// once Netlify moves their build environment to Node 12
-async function mapFields(item) {
-  const fields = await Promise.all(
-    Object.entries(item.fields ? item.fields : item).map(getFieldValue),
-  );
-
-  const out = {};
-  fields.forEach(([key, value]) => {
-    out[key] = value;
-  });
-
-  return out;
+function mapFields(item) {
+  const itemEntries = Object.entries(item.fields ? item.fields : item);
+  return Object.fromEntries(itemEntries.map(getFieldValue));
 }
 
 async function getContent() {
@@ -39,9 +29,11 @@ async function getContent() {
     console.log("> Getting content for", type);
     const entries = await client.getEntries({ content_type: type });
 
+    const mappedEntries = entries.items.map(mapFields);
+
     fs.writeFileSync(
       path.join(process.cwd(), "data", `${type}.json`),
-      JSON.stringify(await Promise.all(entries.items.map(mapFields)), null, 2),
+      JSON.stringify(mappedEntries, null, 2),
     );
     console.log("> Content retrieved and written for", type);
   }
