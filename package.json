@@ -17,8 +17,8 @@
     "swr": "2.3.6"
   },
   "devDependencies": {
-    "@types/node": "24.6.0",
-    "@types/react": "19.1.16",
+    "@types/node": "24.6.1",
+    "@types/react": "19.1.17",
     "typescript": "5.9.3"
   },
   "scripts": {

@@ -361,21 +361,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:24.6.0":
-  version: 24.6.0
-  resolution: "@types/node@npm:24.6.0"
+"@types/node@npm:24.6.1":
+  version: 24.6.1
+  resolution: "@types/node@npm:24.6.1"
   dependencies:
     undici-types: "npm:~7.13.0"
-  checksum: 10c0/06f1aa1b5d9a8c26285b34c25aee554f31a1dc0b39627cc14e7c1c6967e75a47ab9f409eee14796cbcc004ae4059fa884cb6092ecfb368c9656d16686d7cc9d8
+  checksum: 10c0/f2f8aea441d72139345cfa2e392af51bc27d12eb5f74b9b4d202046a2e82ab70d6da89c46a2ac7feea98854c2919e53070869d4af9d448e173a77249fcb7bca3
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.1.16":
-  version: 19.1.16
-  resolution: "@types/react@npm:19.1.16"
+"@types/react@npm:19.1.17":
+  version: 19.1.17
+  resolution: "@types/react@npm:19.1.17"
   dependencies:
     csstype: "npm:^3.0.2"
-  checksum: 10c0/3d781f715f15f308b601d74142fae77c65679c318a3bb0a319df898f39095e738ba7ed7061cec971b19b6d33969ef9cd50fec92b034024ef3fcc25bb9a2eb3d0
+  checksum: 10c0/8a8369ea00fc961f0884be4d1da4a039b2b6445de9c8b690ed0ebe15acfb0b1f27005278fef1fe39a1722a30f4415778b790d0089e2b30019371c61355ea316f
   languageName: node
   linkType: hard
 
@@ -2054,8 +2054,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@types/node": "npm:24.6.0"
-    "@types/react": "npm:19.1.16"
+    "@types/node": "npm:24.6.1"
+    "@types/react": "npm:19.1.17"
     contentful: "npm:11.8.2"
     dotenv: "npm:17.2.3"
     marked: "npm:16.3.0"
