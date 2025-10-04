@@ -52,13 +52,13 @@ export async function generateMetadata({
   if (post.heroImage) {
     metadata.openGraph!.images = [
       {
-        url: post.heroImage.file.url,
+        url: `https:${post.heroImage.file.url}`,
         width: post.heroImage.file.details.image.width,
         height: post.heroImage.file.details.image.height,
         alt: post.heroImage.description,
       },
     ];
-    metadata.twitter!.images = [post.heroImage.file.url];
+    metadata.twitter!.images = [`https:${post.heroImage.file.url}`];
   }
 
   return metadata;
