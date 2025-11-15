@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "contentful": "11.8.11",
+    "contentful": "11.8.12",
     "dotenv": "17.2.3",
-    "marked": "16.4.1",
+    "marked": "16.4.2",
     "next": "15.5.6",
     "normalize.css": "8.0.1",
     "prettier": "3.6.2",
@@ -31,5 +31,5 @@
     "getcontent": "node src/helpers/getcontent.js install",
     "upgrade": "yarn up -R '**'"
   },
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.11.0"
 }
