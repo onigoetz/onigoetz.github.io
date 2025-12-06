@@ -3,7 +3,7 @@
     "contentful": "11.9.0",
     "dotenv": "17.2.3",
     "marked": "16.4.2",
-    "next": "15.5.6",
+    "next": "15.5.7",
     "normalize.css": "8.0.1",
     "prettier": "3.7.4",
     "react": "19.2.1",
