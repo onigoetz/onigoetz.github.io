@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "contentful": "11.10.1",
+    "contentful": "11.10.2",
     "dotenv": "17.2.3",
     "marked": "16.4.2",
     "next": "15.5.9",
