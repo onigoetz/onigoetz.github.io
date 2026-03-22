@@ -591,9 +591,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful@npm:11.10.7":
-  version: 11.10.7
-  resolution: "contentful@npm:11.10.7"
+"contentful@npm:11.11.0":
+  version: 11.11.0
+  resolution: "contentful@npm:11.11.0"
   dependencies:
     "@contentful/content-source-maps": "npm:^0.11.33"
     "@contentful/rich-text-types": "npm:^16.6.1"
@@ -603,7 +603,7 @@ __metadata:
     json-stringify-safe: "npm:^5.0.1"
     tslib: "npm:^2.8.1"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/8499cef03abae4fcb7bbca0cc4f8306feea60a9bd12d9a01eed0df37a70e0fa0dbbeff70a9fe1204c3fc98ccbf826981305306cf7f3426073bfcde46f3a69407
+  checksum: 10c0/1d9abaf6f62c9c941fb65e48bc6db5b5641b72f33bd78a3bc900d1bc8a88787423beac0c3bd7e4da1c06998fba185b8c186cf4903ef8fd96f1dfa767a0063829
   languageName: node
   linkType: hard
 
@@ -2036,7 +2036,7 @@ __metadata:
   dependencies:
     "@types/node": "npm:24.12.0"
     "@types/react": "npm:19.2.14"
-    contentful: "npm:11.10.7"
+    contentful: "npm:11.11.0"
     dotenv: "npm:17.3.1"
     marked: "npm:16.4.2"
     next: "npm:16.2.0"
