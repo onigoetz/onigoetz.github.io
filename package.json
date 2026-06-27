@@ -14,7 +14,7 @@
     "rehype-pretty-code": "^0.14.1",
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.1",
-    "swr": "2.4.1"
+    "swr": "2.4.2"
   },
   "devDependencies": {
     "@types/node": "24.13.2",
