@@ -9,7 +9,10 @@ import "../../css/code.css";
 import "../../css/layout.css";
 import "../../css/technologies.css";
 
-import { SiBluesky, SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { SiBluesky, SiGithub, SiX } from "react-icons/si";
+// Simple Icons dropped the LinkedIn glyph in react-icons 5.7.0. Remix Icon's is the closest
+// replacement: same boxed "in" mark, and a 24x24 viewBox like the Si icons next to it.
+import { RiLinkedinBoxFill } from "react-icons/ri";
 
 import styles from "./Layout.module.css";
 import ContentfulImage from "@components/ContentfulImage";
@@ -119,7 +122,7 @@ export default async function Layout({ children }) {
               target="_blank"
               rel="noopener"
             >
-              <SiLinkedin style={{ fill: "#1083fe", maxWidth: 50 }} />
+              <RiLinkedinBoxFill style={{ fill: "#1083fe", maxWidth: 50 }} />
             </a>
           </div>
         </aside>

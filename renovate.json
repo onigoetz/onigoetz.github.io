@@ -4,5 +4,12 @@
     "github>onigoetz/renovate-preset:recommended",
     ":preserveSemverRanges",
     ":automergeMinor"
+  ],
+  "packageRules": [
+    {
+      "description": "TS 7 dropped lib/typescript.js, which Next.js probes to detect TypeScript. Support landed in Next 16.3 behind experimental.useTypeScriptCli; revisit once that is stable.",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<7"
+    }
   ]
 }
