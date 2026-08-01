@@ -3,7 +3,7 @@
     "contentful": "11.12.7",
     "dotenv": "17.4.2",
     "marked": "18.0.7",
-    "next": "16.2.11",
+    "next": "16.2.12",
     "normalize.css": "8.0.1",
     "prettier": "3.9.6",
     "react": "19.2.8",
@@ -30,5 +30,5 @@
     "getcontent": "node src/helpers/getcontent.js install",
     "upgrade": "yarn up -R '**'"
   },
-  "packageManager": "yarn@4.17.1"
+  "packageManager": "yarn@4.18.0"
 }
