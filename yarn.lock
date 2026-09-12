@@ -603,9 +603,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"contentful-sdk-core@npm:^9.4.4":
-  version: 9.4.5
-  resolution: "contentful-sdk-core@npm:9.4.5"
+"contentful-sdk-core@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "contentful-sdk-core@npm:10.0.0"
   dependencies:
     "@rollup/rollup-linux-x64-gnu": "npm:^4.18.0"
     fast-copy: "npm:^3.0.2"
@@ -615,23 +615,23 @@ __metadata:
   dependenciesMeta:
     "@rollup/rollup-linux-x64-gnu":
       optional: true
-  checksum: 10c0/bd458ece8be396793b5906ba48044b5171c19bed521110d23b7aa2786fbee96dd952c049eb0b8c6e45103d6be260799df4d61729cb10d8e0f2a0a568f5c71c6e
+  checksum: 10c0/e39a7308c01e7f75cabf7a42fc75edff75c23b581115d0c897b2dc010fd72b46214ac08224ece5c4d2c808ec5e397fea0208eae7b03e6d77170f4f7ec18ada07
   languageName: node
   linkType: hard
 
-"contentful@npm:11.12.9":
-  version: 11.12.9
-  resolution: "contentful@npm:11.12.9"
+"contentful@npm:11.12.10":
+  version: 11.12.10
+  resolution: "contentful@npm:11.12.10"
   dependencies:
     "@contentful/content-source-maps": "npm:^0.12.0"
     "@contentful/rich-text-types": "npm:^17.2.7"
     axios: "npm:^1.15.0"
     contentful-resolve-response: "npm:^2.0.0"
-    contentful-sdk-core: "npm:^9.4.4"
+    contentful-sdk-core: "npm:^10.0.0"
     json-stringify-safe: "npm:^5.0.1"
     tslib: "npm:^2.8.1"
     type-fest: "npm:^4.0.0"
-  checksum: 10c0/6558c0d0f9f52287c6a49b17778fc23ec2de89fe5465151e478be6ad154acb1d738ec42de0a3f8c0159f374695635aaf55555b02fc1e28e9ca6d109a7066213c
+  checksum: 10c0/2c2036484ccec1028f2b4c09473d141fb7b45f78148f5f55e8339835bb021e4c0f57c6aafa4db67492aead2e4573c4c156584b3664380b31e757888b33e30944
   languageName: node
   linkType: hard
 
@@ -1139,12 +1139,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:18.0.11":
-  version: 18.0.11
-  resolution: "marked@npm:18.0.11"
+"marked@npm:18.0.12":
+  version: 18.0.12
+  resolution: "marked@npm:18.0.12"
   bin:
     marked: bin/marked.js
-  checksum: 10c0/6c2a2bea05974f08f869d591a8eb6aa7fe68e56edbfe74c2d15eea3b85d45aabfea9dada6914d6f4a7917d612059b64eb8b9e5fd190c74ad8ab79c1f48a249b3
+  checksum: 10c0/16cee41cc0bbed129d79997841252eec6842137f877a8cc061443b9d9b6583065a91f636b55c49c3744eee886ca93063d59dc37907442919147b8b98b5a3c91b
   languageName: node
   linkType: hard
 
@@ -2011,9 +2011,9 @@ __metadata:
   dependencies:
     "@types/node": "npm:26.4.1"
     "@types/react": "npm:19.2.18"
-    contentful: "npm:11.12.9"
+    contentful: "npm:11.12.10"
     dotenv: "npm:17.4.2"
-    marked: "npm:18.0.11"
+    marked: "npm:18.0.12"
     next: "npm:16.3.4"
     normalize.css: "npm:8.0.1"
     prettier: "npm:3.9.6"
