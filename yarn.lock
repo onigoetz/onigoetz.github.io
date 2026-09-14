@@ -501,11 +501,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.9.19":
-  version: 2.11.21
-  resolution: "baseline-browser-mapping@npm:2.11.21"
+  version: 2.11.22
+  resolution: "baseline-browser-mapping@npm:2.11.22"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/1110ca70b60de9fa673e6d71154cbb2752225c28e069266c2f455f5a26367efc0e5b47a52afba22c9ef1e06d56a6c81aa964dda1fbc66c487e65c18a7c1e11c4
+  checksum: 10c0/455905743ccdad6aa50c6e87b99ae17c245ecd60c94c933d2b7ec4e7f9fbbcc5e72ef9985cb11fd7cde600f14803dc41b36d3c2229bcd3e0600b785d66098e99
   languageName: node
   linkType: hard
 
@@ -1718,11 +1718,11 @@ __metadata:
   linkType: hard
 
 "nanoid@npm:^3.3.16":
-  version: 3.3.18
-  resolution: "nanoid@npm:3.3.18"
+  version: 3.3.19
+  resolution: "nanoid@npm:3.3.19"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 10c0/b994b4e396730f8be2520923284e2040d61eaee55cc6d4935ef6d38d34bafdc46133eda4d3faea5073bda545aa6079d82b886caeac5c731cf9ac18bcc1301425
+  checksum: 10c0/ce7afa6258bfaa00bdc8de291cfe9913280eaa403b7d9cff3db4e4200c1913e7163577df74897958da144db473a96c67f74f57db0f542fbfe409df677bae3255
   languageName: node
   linkType: hard
 
@@ -2382,11 +2382,11 @@ __metadata:
   linkType: hard
 
 "use-sync-external-store@npm:^1.6.0":
-  version: 1.6.0
-  resolution: "use-sync-external-store@npm:1.6.0"
+  version: 1.7.0
+  resolution: "use-sync-external-store@npm:1.7.0"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/35e1179f872a53227bdf8a827f7911da4c37c0f4091c29b76b1e32473d1670ebe7bcd880b808b7549ba9a5605c233350f800ffab963ee4a4ee346ee983b6019b
+  checksum: 10c0/6bae7cb778ce611131ec830c4e469fbc2872acefc25d2e4cf1c28b8628690689770742a9f2f0642c95134f9c77041fee60f0352f81ca43f96643b0ed01774726
   languageName: node
   linkType: hard
 
