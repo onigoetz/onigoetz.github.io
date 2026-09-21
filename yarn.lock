@@ -340,8 +340,8 @@ __metadata:
   linkType: hard
 
 "@rollup/rollup-linux-x64-gnu@npm:^4.18.0":
-  version: 4.63.1
-  resolution: "@rollup/rollup-linux-x64-gnu@npm:4.63.1"
+  version: 4.63.3
+  resolution: "@rollup/rollup-linux-x64-gnu@npm:4.63.3"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
@@ -501,11 +501,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.9.19":
-  version: 2.11.22
-  resolution: "baseline-browser-mapping@npm:2.11.22"
+  version: 2.11.25
+  resolution: "baseline-browser-mapping@npm:2.11.25"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/455905743ccdad6aa50c6e87b99ae17c245ecd60c94c933d2b7ec4e7f9fbbcc5e72ef9985cb11fd7cde600f14803dc41b36d3c2229bcd3e0600b785d66098e99
+  checksum: 10c0/d725a78420b3c8b0bf401d2c724ff662e7e1b67a123b17bb4417bbd6f6f00d8245bdbda862edbca84ed65618aa80a184fec83ad5d6f7c4031cced4b8ab2e7f11
   languageName: node
   linkType: hard
 
@@ -1432,15 +1432,15 @@ __metadata:
   linkType: hard
 
 "micromark-extension-gfm-table@npm:^2.0.0":
-  version: 2.1.1
-  resolution: "micromark-extension-gfm-table@npm:2.1.1"
+  version: 2.1.2
+  resolution: "micromark-extension-gfm-table@npm:2.1.2"
   dependencies:
     devlop: "npm:^1.0.0"
     micromark-factory-space: "npm:^2.0.0"
     micromark-util-character: "npm:^2.0.0"
     micromark-util-symbol: "npm:^2.0.0"
     micromark-util-types: "npm:^2.0.0"
-  checksum: 10c0/04bc00e19b435fa0add62cd029d8b7eb6137522f77832186b1d5ef34544a9bd030c9cf85e92ddfcc5c31f6f0a58a43d4b96dba4fc21316037c734630ee12c912
+  checksum: 10c0/cb373e2a1df6700a884b3fc85bdf47fee1dd06664e72cf866dd1e5828f017517cbc3e3a58b9256d6b5c5a21b067151806afbf780188c47d2fc027004ea3ab07c
   languageName: node
   linkType: hard
 
